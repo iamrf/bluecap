@@ -1,3 +1,8 @@
-// -----------------------------------------------------------------------------
-// This file contains all @font-face declarations, if any.
-// -----------------------------------------------------------------------------
+@font-face {
+    font-family: "vazir";
+    src: font("eot/Vazir-Thin.eot");
+    src: font("eot/Vazir-Thin.eot") format("embedded-opentype"),
+    font("woff2/Vazir-Thin.woff2") format("woff2"),
+    font("woff/Vazir-Thin.woff") format("woff"),
+    font("ttf/Vazir-Thin.ttf") format("truetype");
+}
