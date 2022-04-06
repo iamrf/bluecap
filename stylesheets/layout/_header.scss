@@ -1,3 +1,10 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the header of the site/application.
 // -----------------------------------------------------------------------------
+.header {
+    min-width: 100%;
+    height: 100vh;
+    background-color: $cultured;
+    background-image: image("head_pattern.svg");
+    background-size: cover;
+}

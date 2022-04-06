@@ -1,0 +1,38 @@
+.nav-logo {
+    width: 5rem;
+    height: 5rem;
+}
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: block;
+    width: 100%;
+    color: $space-cadet;
+    font-size: 2rem;
+    font-weight: bold;
+    a {
+        color: $space-cadet;
+        transition: all 0.3s ease;
+        &:hover {
+            color: $amaranth-red;
+        }
+    }
+}
+.nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__item {
+        margin: 0 1rem;
+    }
+}
+.nav-actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__item {
+        margin: 0 0.5rem;
+    }
+}
