@@ -1,16 +1,13 @@
-.nav-logo {
-    width: 5rem;
-    height: 5rem;
-}
 .navbar {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
+    z-index: 5;
     display: block;
     width: 100%;
     color: $space-cadet;
-    font-size: 2rem;
+    font-size: 1.7rem;
     font-weight: bold;
     a {
         color: $space-cadet;
@@ -19,6 +16,10 @@
             color: $amaranth-red;
         }
     }
+}
+.nav-logo {
+    width: 5rem;
+    height: 5rem;
 }
 .nav-links {
     display: flex;
@@ -29,6 +30,7 @@
     }
 }
 .nav-actions {
+    font-size: 2.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
