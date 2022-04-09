@@ -1,0 +1,46 @@
+body {
+    height: 300vh;
+}
+
+/* Create a sticky/fixed navbar with js */
+#navbar {
+    overflow: hidden;
+    background-color: none;
+    padding: 2rem 1rem; /* Large padding which will shrink on scroll (using JS) */
+    transition: 0.4s; /* Adds a transition effect when the padding is decreased */
+    position: fixed; /* Sticky/fixed navbar */
+    width: 100%;
+    top: 0; /* At the top */
+    left: 0;
+    right: 0;
+    z-index: 99;
+    font-size: 2rem;
+    font-weight: bold;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    //padding: 2rem 0;
+}
+
+#nav-logo {
+    width: 5rem;
+    height: 5rem;
+}
+
+.nav-list {
+    &__link {
+        margin: 0 1rem;
+    }
+}
+
+.nav-auth {
+    font-size: 2.5rem;
+    &__link {
+        margin: 0 0.5rem;
+    }
+}

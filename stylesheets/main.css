@@ -1,3 +1,5 @@
+/* Cascade */
+/* Inheritance */
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -334,8 +336,6 @@ template {
   display: none;
 }
 
-/* Cascade */
-/* Inheritance */
 /**
  * Set up a decent box model on the root element
  */
@@ -365,6 +365,8 @@ body {
   font-family: "vazir", Verdana, Geneva, Tahoma, sans-serif;
   font-size: 1.5rem;
   margin: 0;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 button,
@@ -380,6 +382,13 @@ ul {
 
 a {
   text-decoration: none;
+  color: #2b2d42ff;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+a:hover {
+  color: #ef233cff;
 }
 
 @font-face {
@@ -561,5 +570,61 @@ a {
   .show-large {
     display: block;
   }
+}
+
+body {
+  height: 300vh;
+}
+
+/* Create a sticky/fixed navbar with js */
+#navbar {
+  overflow: hidden;
+  background-color: none;
+  padding: 2rem 1rem;
+  /* Large padding which will shrink on scroll (using JS) */
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  /* Adds a transition effect when the padding is decreased */
+  position: fixed;
+  /* Sticky/fixed navbar */
+  width: 100%;
+  top: 0;
+  /* At the top */
+  left: 0;
+  right: 0;
+  z-index: 99;
+  font-size: 2rem;
+  font-weight: bold;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#nav-logo {
+  width: 5rem;
+  height: 5rem;
+}
+
+.nav-list__link {
+  margin: 0 1rem;
+}
+
+.nav-auth {
+  font-size: 2.5rem;
+}
+
+.nav-auth__link {
+  margin: 0 0.5rem;
 }
 /*# sourceMappingURL=main.css.map */
