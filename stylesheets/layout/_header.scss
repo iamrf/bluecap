@@ -34,10 +34,12 @@ header {
         text-align: center;
         color: $space-cadet;
         line-height: 1.7;
+        background-image: image("head_pattern.svg");
+        background-size: cover;
         &__site-title {
             font-size: 6rem;
             font-weight: bold;
-            @media only screen and (orientation: portrait) and (min-width: 320px){
+            @media only screen and (orientation: portrait) and (min-width: 320px) {
                 font-size: 3rem !important;
             }
             @media only screen and (max-width: 1200px) {
@@ -55,7 +57,7 @@ header {
         }
         &__site-description {
             font-size: 2.5rem;
-            @media only screen and (orientation: portrait) and (min-width: 320px){
+            @media only screen and (orientation: portrait) and (min-width: 320px) {
                 font-size: 2rem !important;
             }
             @media only screen and (max-width: 1200px) {
@@ -73,7 +75,8 @@ header {
             border-radius: 1rem;
             font-weight: bold;
             &:hover {
-                background-color: $manatee;
+            box-shadow: inset 0rem 0rem 1rem $cultured;
+            background-color: $manatee;
                 color: $space-cadet;
             }
         }
@@ -97,7 +100,7 @@ header {
             top: 20%;
             left: 10%;
             bottom: 0;
-            @media only screen and (orientation: portrait){
+            @media only screen and (orientation: portrait) {
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -148,11 +151,11 @@ header {
                 &__content {
                     display: block;
                     line-height: 2.5;
-                    margin: 1rem 0 0;
+                    margin: .5rem 0 0;
                     & h3 {
                         font-size: 2.5rem;
-                        @media only screen and (orientation: portrait){
-                            font-size: 2rem !important; 
+                        @media only screen and (orientation: portrait) {
+                            font-size: 2rem !important;
                         }
                         @media only screen and (max-width: 992px) {
                             font-size: 2rem;
@@ -163,8 +166,8 @@ header {
                     }
                     & h4 {
                         font-size: 1.5rem;
-                        @media only screen and (orientation: portrait){
-                            font-size: 1.4rem !important; 
+                        @media only screen and (orientation: portrait) {
+                            font-size: 1.4rem !important;
                         }
                         @media only screen and (max-width: 992px) {
                             font-size: 1.2rem;
@@ -180,21 +183,26 @@ header {
 }
 
 .carousel-links {
-    margin: 2rem 0.5rem 0;
+    margin: 1.5rem 0.5rem 1rem;
     font-size: 1.5rem;
     &__details {
         color: $cultured;
         padding: 0.6rem 2rem;
         border: 1px solid $cultured;
         border-radius: 0.5rem;
-        @media only screen and (orientation: portrait){
-            font-size: 1.4rem !important; 
+        @media only screen and (orientation: portrait) {
+            font-size: 1.4rem !important;
         }
         @media only screen and (max-width: 992px) {
             font-size: 1.2rem;
         }
         @media only screen and (max-width: 768px) {
             font-size: 1rem;
+        }
+        &:hover{
+            box-shadow: 0rem 0rem .7rem $cultured;
+            background-color: $cultured;
+            color: $space-cadet;
         }
     }
     &__add-to-cart {
@@ -204,14 +212,19 @@ header {
         border: 1px solid $cultured;
         border-radius: 0.5rem;
         margin: 0 1rem;
-        @media only screen and (orientation: portrait){
-            font-size: 1.4rem !important; 
+        @media only screen and (orientation: portrait) {
+            font-size: 1.4rem !important;
         }
         @media only screen and (max-width: 992px) {
             font-size: 1.2rem;
         }
         @media only screen and (max-width: 768px) {
             font-size: 1rem;
+        }
+        &:hover{
+            box-shadow: 0rem 0rem .7rem $cultured;
+            background-color: $cultured;
+            color: green;
         }
     }
 }
