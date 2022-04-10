@@ -87,6 +87,8 @@ header {
         height: 100%;
         color: $silver-sand;
         background-color: $space-cadet;
+        background-image: image('pattern_slider.svg');
+        background-size: cover;
         clip-path: polygon(0% 0%, 80% 0%, 100% 50%, 80% 100%, 0% 100%);
         border-radius: 1rem;
         overflow: hidden;
