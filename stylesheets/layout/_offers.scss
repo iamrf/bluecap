@@ -1,0 +1,110 @@
+.offers {
+    &__box {
+        position: relative;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        overflow: hidden;
+        width: 100%;
+        padding: 1rem 1rem;
+        background-color: $yellow-sun;
+        border-radius: 1.5rem;
+        box-shadow: 0 0 1rem $yellow-sun;
+        &__item {
+            display: block;
+            height: 100%;
+            &__subject {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                height: 100%;
+                &__link {
+                    background-color: $white;
+                    color: $red-sun;
+                    margin: 1rem 0;
+                    padding: 1rem 1.5rem;
+                    border-radius: 1.5rem;
+                    font-weight: bold;
+                    &:hover {
+                        background-color: $red-sun;
+                        color: $white;
+                    }
+                }
+            }
+            &__slider {
+                flex-grow: 1;
+                &__card {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    align-items: center;
+                    height: 30rem;
+                    padding: 1rem 0.3rem;
+                    margin: 0.5rem 1rem 0;
+                    background-color: $cultured;
+                    border-radius: 0.7rem;
+                    & img {
+                        height: 15rem;
+                    }
+                    &__detail {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        margin: 1rem 0 0;
+                        &__percent {
+                            display: inline-block;
+                            background-color: $red-sun;
+                            color: $white;
+                            font-family: Tahoma;
+                            font-size: 1.2rem;
+                            padding: 0.3rem;
+                            border-radius: 0.7rem;
+                        }
+                        &__price {
+                            font-size: 1.5rem;
+                            padding: 0.3rem;
+                            border-radius: 0.7rem;
+                            font-weight: bold;
+                            color: $manatee;
+                        }
+                    }
+                    &__title {
+                        margin: 2.5rem 0 0;
+                        text-align: center;
+                    }
+                    &__btns {
+                        &__detail {
+                            position: absolute;
+                            bottom: 1rem;
+                            right: 3rem;
+                            background-color: $space-cadet;
+                            color: $white;
+                            padding: 0.5rem 1rem;
+                            font-weight: bold;
+                            border-radius: 0.5rem;
+                            &:hover {
+                                background-color: $yellow-sun;
+                                color: $space-cadet;
+                            }
+                        }
+                        &__add-to-cart {
+                            position: absolute;
+                            bottom: 1rem;
+                            left: 3rem;
+                            background-color: $manatee;
+                            color: $white;
+                            padding: 0.5rem 1rem;
+                            font-weight: bold;
+                            border-radius: 0.5rem;
+                            &:hover {
+                                background-color: $yellow-sun;
+                                color: $space-cadet;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

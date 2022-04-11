@@ -33,3 +33,14 @@ $(document).ready(function () {
         dots: true,
     });
 });
+
+$(document).ready(function () {
+    $(".offers__box__carousel").owlCarousel({
+        autoplay: true,
+        autoplayTimeout: 5000,
+        autoplayHoverPause: true,
+        items: 5,
+        loop: true,
+        rtl: true,
+    });
+});

@@ -75,9 +75,8 @@ header {
             border-radius: 1rem;
             font-weight: bold;
             &:hover {
-            box-shadow: inset 0rem 0rem 1rem $cultured;
-            background-color: $manatee;
-                color: $space-cadet;
+                background-color: $black-coral;
+                color: $cultured;
             }
         }
     }
@@ -87,7 +86,7 @@ header {
         height: 100%;
         color: $silver-sand;
         background-color: $space-cadet;
-        background-image: image('pattern_slider.svg');
+        background-image: image("pattern_slider.svg");
         background-size: cover;
         clip-path: polygon(0% 0%, 80% 0%, 100% 50%, 80% 100%, 0% 100%);
         border-radius: 1rem;
@@ -153,7 +152,7 @@ header {
                 &__content {
                     display: block;
                     line-height: 2.5;
-                    margin: .5rem 0 0;
+                    margin: 0.5rem 0 0;
                     & h3 {
                         font-size: 2.5rem;
                         @media only screen and (orientation: portrait) {
@@ -201,8 +200,8 @@ header {
         @media only screen and (max-width: 768px) {
             font-size: 1rem;
         }
-        &:hover{
-            box-shadow: 0rem 0rem .7rem $cultured;
+        &:hover {
+            box-shadow: 0rem 0rem 0.7rem $cultured;
             background-color: $cultured;
             color: $space-cadet;
         }
@@ -223,10 +222,10 @@ header {
         @media only screen and (max-width: 768px) {
             font-size: 1rem;
         }
-        &:hover{
-            box-shadow: 0rem 0rem .7rem $cultured;
+        &:hover {
+            box-shadow: 0rem 0rem 0.7rem $cultured;
             background-color: $cultured;
-            color: green;
+            color: $manatee;
         }
     }
 }
