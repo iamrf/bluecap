@@ -1086,7 +1086,6 @@ header {
           align-items: center;
   overflow: hidden;
   width: 100%;
-  padding: 1rem 1rem;
   background-color: #EDAE49;
   border-radius: 1.5rem;
   -webkit-box-shadow: 0 0 1rem #EDAE49;
@@ -1136,6 +1135,7 @@ header {
 }
 
 .offers__box__item__slider__card {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1173,14 +1173,13 @@ header {
   margin: 1rem 0 0;
 }
 
-.offers__box__item__slider__card__detail__percent {
+.offers__box__item__slider__card__detail__old-price {
   display: inline-block;
-  background-color: #D1495B;
-  color: #ffffff;
-  font-family: Tahoma;
-  font-size: 1.2rem;
+  color: #777;
   padding: 0.3rem;
   border-radius: 0.7rem;
+  -webkit-text-decoration-line: line-through;
+          text-decoration-line: line-through;
 }
 
 .offers__box__item__slider__card__detail__price {
@@ -1226,5 +1225,61 @@ header {
 .offers__box__item__slider__card__btns__add-to-cart:hover {
   background-color: #EDAE49;
   color: #30638E;
+}
+
+.ribbon {
+  position: absolute;
+  left: -.5rem;
+  top: -.5rem;
+  z-index: 1;
+  overflow: hidden;
+  width: 7.5rem;
+  height: 7.5rem;
+  text-align: right;
+}
+
+.ribbon span {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #FFF;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 2rem;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  width: 10rem;
+  display: block;
+  background: #79A70A;
+  background: -webkit-gradient(linear, left top, left bottom, from(#D1495B), to(#943440));
+  background: linear-gradient(#D1495B 0%, #943440 100%);
+  -webkit-box-shadow: 0 0.3rem 1rem -0.5rem black;
+          box-shadow: 0 0.3rem 1rem -0.5rem black;
+  position: absolute;
+  top: 1.9rem;
+  left: -2.1rem;
+}
+
+.ribbon span::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 100%;
+  z-index: -1;
+  border-left: .3rem solid #943440;
+  border-right: .3rem solid transparent;
+  border-bottom: .3rem solid transparent;
+  border-top: .3rem solid #943440;
+}
+
+.ribbon span::after {
+  content: "";
+  position: absolute;
+  right: 0px;
+  top: 100%;
+  z-index: -1;
+  border-left: .3rem solid transparent;
+  border-right: .3rem solid #943440;
+  border-bottom: .3rem solid transparent;
+  border-top: .3rem solid #943440;
 }
 /*# sourceMappingURL=main.css.map */

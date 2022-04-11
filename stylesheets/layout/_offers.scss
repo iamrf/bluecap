@@ -6,7 +6,6 @@
         align-items: center;
         overflow: hidden;
         width: 100%;
-        padding: 1rem 1rem;
         background-color: $yellow-sun;
         border-radius: 1.5rem;
         box-shadow: 0 0 1rem $yellow-sun;
@@ -35,6 +34,7 @@
             &__slider {
                 flex-grow: 1;
                 &__card {
+                    position: relative;
                     display: flex;
                     flex-direction: column;
                     justify-content: flex-start;
@@ -52,14 +52,12 @@
                         justify-content: space-between;
                         align-items: center;
                         margin: 1rem 0 0;
-                        &__percent {
+                        &__old-price {
                             display: inline-block;
-                            background-color: $red-sun;
-                            color: $white;
-                            font-family: Tahoma;
-                            font-size: 1.2rem;
+                            color: #777;
                             padding: 0.3rem;
                             border-radius: 0.7rem;
+                            text-decoration-line: line-through;
                         }
                         &__price {
                             font-size: 1.5rem;
