@@ -23,7 +23,7 @@ function scrollFunction() {
 
 // Owl Carousel initialize
 $(document).ready(function () {
-    $(".owl-carousel").owlCarousel({
+    $(".hero-carousel").owlCarousel({
         autoplay: true,
         autoplayTimeout: 3000,
         autoplayHoverPause: true,
