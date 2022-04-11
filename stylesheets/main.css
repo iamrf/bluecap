@@ -950,10 +950,6 @@ header {
   color: green;
 }
 
-body {
-  height: 300vh;
-}
-
 /* Create a sticky/fixed navbar with js */
 #navbar {
   position: fixed;
@@ -999,6 +995,12 @@ body {
   text-shadow: 0px 3px 5px #edf2f4ff;
 }
 
+@media only screen and (max-width: 768px) {
+  .nav-list__link {
+    text-shadow: none;
+  }
+}
+
 .nav-auth {
   font-size: 2.5rem;
 }
@@ -1011,6 +1013,48 @@ body {
 @media only screen and (orientation: landscape) {
   .nav-auth__link {
     color: #bdc6d1ff;
+  }
+}
+
+.burger-menu {
+  display: none;
+}
+
+.burger-menu:checked ~ .mobile-wrap {
+  position: absolute;
+  top: 60%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  height: 100vh;
+  background-color: #bdc6d1ff;
+}
+
+.burger-menu__label {
+  font-size: 3rem;
+  -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+          order: -1;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+@media only screen and (min-width: 769px) {
+  .burger-menu__label {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .mobile-wrap {
+    display: none;
   }
 }
 /*# sourceMappingURL=main.css.map */
