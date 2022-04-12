@@ -516,6 +516,12 @@ a:hover {
   text-align: center;
 }
 
+/* Responsive image */
+.responsive {
+  width: 100%;
+  height: auto;
+}
+
 /*  Padding Margin Helper   */
 .pt-10 {
   padding-top: 1rem;
@@ -1319,6 +1325,76 @@ header {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    font-size: 2.2rem;
+  }
+}
+
+.banners {
+  width: 100%;
+}
+
+.banners__box {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  width: 100%;
+}
+
+.banners__box__item {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  display: block;
+  margin: 0 1rem;
+}
+
+.banners__box__item img {
+  border-radius: 1rem;
+}
+
+@media only screen and (max-width: 1000px) {
+  .banners__box__item {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 47%;
+    margin: 0.5rem 1rem;
+  }
+}
+
+@media only screen and (orientation: portrait) {
+  .banners__box__item {
+    width: 100%;
+    margin: 0.5rem 0;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .banners__box {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media only screen and (orientation: portrait) {
+  .banners__box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
