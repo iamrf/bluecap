@@ -1243,6 +1243,10 @@ header {
   -webkit-box-shadow: 0 0 1rem #ffffff;
           box-shadow: 0 0 1rem #ffffff;
   padding: 1rem 0.5rem;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .categories__list {
@@ -1396,6 +1400,14 @@ header {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+}
+
+.responsive-banner {
+  width: 100%;
+}
+
+.responsive-banner__box {
+  border-radius: 1rem;
 }
 
 .ribbon {

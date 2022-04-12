@@ -33,3 +33,11 @@
         }
     }
 }
+
+// Responsive banner
+.responsive-banner{
+    width: 100%;
+    &__box{
+        border-radius: 1rem;
+    }
+}

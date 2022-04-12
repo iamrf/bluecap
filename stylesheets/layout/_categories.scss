@@ -8,6 +8,7 @@
         border-radius: 1.5rem;
         box-shadow: 0 0 1rem $white;
         padding: 1rem 0.5rem;
+        user-select: none;
     }
     &__list {
         display: flex;

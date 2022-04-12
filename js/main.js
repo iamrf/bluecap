@@ -42,6 +42,7 @@ $(document).ready(function () {
         items: 5,
         loop: true,
         rtl: true,
+        nav: true,
         responsive: {
             0: {
                 items: 1,
