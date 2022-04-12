@@ -61,3 +61,30 @@ $(document).ready(function () {
         },
     });
 });
+
+$(document).ready(function () {
+    $(".blog-posts__box__carousel").owlCarousel({
+        autoplay: true,
+        autoplayTimeout: 5000,
+        autoplayHoverPause: true,
+        items: 4,
+        loop: true,
+        rtl: true,
+        responsive: {
+            0: {
+                items: 1,
+            },
+            775: {
+                items: 2,
+            },
+            1000: {
+                items: 3,
+                loop: true,
+            },
+            1200: {
+                items: 4,
+                loop: true,
+            },
+        },
+    });
+});

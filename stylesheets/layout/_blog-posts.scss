@@ -1,0 +1,77 @@
+.blog-posts {
+    width: 100%;
+    &__box {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        background-color: $manatee;
+        height: 50rem;
+        border-radius: 1.5rem;
+        &__item {
+            &__subject {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                &__link {
+                    background-color: $white;
+                    color: $red-sun;
+                    margin: 1rem 0;
+                    padding: 1rem 1.5rem;
+                    border-radius: 1.5rem;
+                    font-weight: bold;
+                    &:hover {
+                        background-color: $red-sun;
+                        color: $white;
+                    }
+                }
+            }
+            &__slider {
+                width: 100%;
+                flex-grow: 1;
+                overflow: hidden;
+                &__card {
+                    position: relative;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    align-items: center;
+                    height: 45rem;
+                    margin: 0.5rem 1rem 0;
+                    background-color: $cultured;
+                    border-radius: 0.7rem;
+                    overflow: hidden;
+                    & img {
+                        height: 15rem;
+                        object-fit: cover;
+                    }
+                    &__content {
+                        padding: 1rem 1.5rem;
+                        height: 25rem;
+                        line-height: 2;
+                        overflow: hidden;
+                        text-align: justify;
+                    }
+                    &__btns {
+                        position: absolute;
+                        bottom: 1.5rem;
+                        left: 1rem;
+                        &__more {
+                            background-color: $manatee;
+                            color: $white;
+                            padding: .5rem 1rem;
+                            border-radius: 1rem;
+                            font-weight: bold;
+                            &:hover {
+                                background-color: $white;
+                                color: $manatee;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
