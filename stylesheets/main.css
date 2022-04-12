@@ -1227,6 +1227,101 @@ header {
   color: #30638E;
 }
 
+.categories__box {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  background-color: #ffffff;
+  border: 0.2rem solid #eeeeee;
+  border-radius: 1.5rem;
+  -webkit-box-shadow: 0 0 1rem #ffffff;
+          box-shadow: 0 0 1rem #ffffff;
+  padding: 1rem 0.5rem;
+}
+
+.categories__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .categories__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.categories__list__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 1rem;
+  padding: 3rem 2rem;
+  border-radius: 1.5rem;
+  font-size: 1.7rem;
+  color: #003D5B;
+  width: 10%;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+}
+
+.categories__list__item img {
+  width: 5rem;
+  height: 5rem;
+}
+
+.categories__list__item span {
+  margin: 3rem 0 0;
+}
+
+.categories__list__item:hover {
+  -webkit-box-shadow: 0 0 1rem #cccccc;
+          box-shadow: 0 0 1rem #cccccc;
+}
+
+@media only screen and (max-width: 768px) {
+  .categories__list__item {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 90%;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 .ribbon {
   position: absolute;
   left: -.5rem;
