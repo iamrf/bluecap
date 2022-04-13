@@ -1,3 +1,99 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the footer of the site/application.
 // -----------------------------------------------------------------------------
+.footer {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: $space-cadet;
+    width: 100%;
+    &__box {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 33%;
+        height: 50rem;
+        margin: 0 1rem;
+        &::before {
+            content: "";
+            position: absolute;
+            top: -5rem;
+            display: block;
+            background-color: $space-cadet;
+            width: 10rem;
+            height: 10rem;
+            border-radius: 50%;
+        }
+        &__icon {
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            top: -5rem;
+            width: 10rem;
+            height: 10rem;
+            color: $cultured;
+        }
+        &__content {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            color: $cultured;
+            padding: 5rem 4rem 0;
+            font-size: 1.7rem;
+            line-height: 2.3;
+            text-align: justify;
+        }
+        &__about {
+        }
+        &__contact {
+            &__phone {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                & a {
+                    display: block;
+                    color: $space-cadet;
+                    background-color: $cultured;
+                    font-size: 3rem;
+                    font-weight: bold;
+                    margin: 0.5rem 0;
+                    padding: .3rem 1rem;
+                    border-radius: 1rem;
+                    & i {
+                        margin: 0 1rem;
+                    }
+                }
+            }
+            &__social {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 3rem 0;
+                &__btn {
+                    color: $space-cadet;
+                    background-color: $cultured;
+                    font-size: 2.5rem;
+                    padding: .5rem 2rem;
+                    margin: 0 1rem;
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+}
+
+.enamad{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5rem 1rem;
+}

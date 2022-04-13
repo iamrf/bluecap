@@ -7,6 +7,8 @@
         overflow: hidden;
         width: 100%;
         background-color: $yellow-sun;
+        background-image: image("pattern_slider.svg");
+        background-size: cover;
         border-radius: 1.5rem;
         box-shadow: 0 0 1rem $yellow-sun;
         &__item {
