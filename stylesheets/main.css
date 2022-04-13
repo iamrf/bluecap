@@ -1875,7 +1875,7 @@ header {
   position: absolute;
   left: -.5rem;
   top: -.5rem;
-  z-index: 1;
+  z-index: 3;
   overflow: hidden;
   width: 7.5rem;
   height: 7.5rem;
@@ -1894,8 +1894,8 @@ header {
   width: 10rem;
   display: block;
   background: #79A70A;
-  background: -webkit-gradient(linear, left top, left bottom, from(#D1495B), to(#943440));
-  background: linear-gradient(#D1495B 0%, #943440 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#E23333), to(#B91111));
+  background: linear-gradient(#E23333 0%, #B91111 100%);
   -webkit-box-shadow: 0 0.3rem 1rem -0.5rem black;
           box-shadow: 0 0.3rem 1rem -0.5rem black;
   position: absolute;
@@ -1909,10 +1909,10 @@ header {
   left: 0px;
   top: 100%;
   z-index: -1;
-  border-left: .3rem solid #943440;
+  border-left: .3rem solid #B91111;
   border-right: .3rem solid transparent;
   border-bottom: .3rem solid transparent;
-  border-top: .3rem solid #943440;
+  border-top: .3rem solid #B91111;
 }
 
 .ribbon span::after {
@@ -1922,8 +1922,8 @@ header {
   top: 100%;
   z-index: -1;
   border-left: .3rem solid transparent;
-  border-right: .3rem solid #943440;
+  border-right: .3rem solid #B91111;
   border-bottom: .3rem solid transparent;
-  border-top: .3rem solid #943440;
+  border-top: .3rem solid #B91111;
 }
 /*# sourceMappingURL=main.css.map */
