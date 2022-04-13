@@ -79,7 +79,6 @@ $(document).ready(function () {
             },
             1000: {
                 items: 3,
-                loop: true,
             },
             1200: {
                 items: 4,
@@ -90,7 +89,7 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () {
-    $(".best-sells__box__carousel").owlCarousel({
+    $(".product-carousel__box__carousel").owlCarousel({
         autoplay: true,
         autoplayTimeout: 3000,
         autoplayHoverPause: true,

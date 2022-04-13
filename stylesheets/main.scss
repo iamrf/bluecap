@@ -25,12 +25,12 @@
   'layout/offers',
   'layout/categories',
   'layout/banners',
-  'layout/blog-posts',
-  'layout/best-sells';
+  'layout/blog-posts';
 
 // 5. Components
 @import
   'components/button',
+  'components/products_carousel',
   'components/ribbon';
 
 // 6. Page-specific styles

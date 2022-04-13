@@ -1,15 +1,26 @@
-.best-sells {
+.product-carousel {
     position: relative;
-    &__tag {
+    user-select: none;
+    &__title-tag {
         position: relative;
         display: flex;
         justify-content: center;
         width: 100%;
-        z-index: 2;
+        z-index: 3;
         & img {
             position: absolute;
             top: -0.7rem;
             width: 35rem;
+        }
+    }
+    &__corner-offer-tag {
+        position: relative;
+        & img {
+            position: absolute;
+            width: 15rem;
+            top: -1.7rem;
+            right: -1.4rem;
+            z-index: 2;
         }
     }
     &__box {
@@ -28,7 +39,7 @@
             display: block;
             height: 100%;
             &__slider {
-                margin: 5rem 0 0;
+                margin: 1.5rem 0 0;
                 &__card {
                     position: relative;
                     display: flex;
@@ -55,15 +66,29 @@
                         height: 30rem;
                         padding: 1rem 0.3rem;
                         margin: 0.5rem 1rem 0;
-                        background: linear-gradient(to bottom right, #B91111 0%, #E23333 100%);
                         border-radius: 0.7rem;
-                        &__content{
-                            color: $cultured;
-                            & a{
-                                display: block;
-                                font-size: 1.7rem;
-                                font-weight: bold;
-                                color: $cultured;
+                        &__content {
+                            &__red {
+                                & a {
+                                    display: block;
+                                    font-size: 1.7rem;
+                                    font-weight: bold;
+                                    background: linear-gradient(to bottom right, #b91111 0%, #e23333 100%);
+                                    color: $cultured;
+                                    padding: 1rem 2rem;
+                                    border-radius: 1rem;
+                                }
+                            }
+                            &__blue {
+                                & a {
+                                    display: block;
+                                    font-size: 1.7rem;
+                                    font-weight: bold;
+                                    background: linear-gradient(to bottom right, #003d5b 0%, #30638e 100%);
+                                    color: $cultured;
+                                    padding: 1rem 2rem;
+                                    border-radius: 1rem;
+                                }
                             }
                         }
                     }
