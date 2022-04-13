@@ -65,8 +65,7 @@ $(document).ready(function () {
         loop: false,
         rtl: true,
         nav: true,
-        navText : ['<i class="fa-solid fa-angle-right fa-2x"></i>',
-        '<i class="fa-solid fa-angle-left fa-2x"></i>'],
+        navText: ['<i class="fa-solid fa-angle-right fa-2x"></i>', '<i class="fa-solid fa-angle-left fa-2x"></i>'],
         responsive: {
             0: {
                 items: 1,
@@ -108,3 +107,12 @@ $(document).ready(function () {
         },
     });
 });
+
+// Google Map
+function myMap() {
+    var mapProp = {
+        center: new google.maps.LatLng(36.55820215309203, 52.690926418338194),
+        zoom: 15,
+    };
+    var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+}
