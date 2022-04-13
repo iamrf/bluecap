@@ -1756,6 +1756,7 @@ header {
 }
 
 .product-carousel__box__item {
+  position: relative;
   display: block;
   height: 100%;
 }

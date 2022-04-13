@@ -36,6 +36,7 @@
         border-radius: 1.5rem;
         box-shadow: 0 0 2rem $white;
         &__item {
+            position: relative;
             display: block;
             height: 100%;
             &__slider {
@@ -151,3 +152,36 @@
         }
     }
 }
+
+
+
+
+// .owl-theme .owl-nav .disabled {
+//     display: none !important;
+// }
+
+// .owl-theme .owl-nav {
+//     position: initial;
+// }
+// .owl-next,
+// .owl-prev {
+//     position: absolute;
+//     top: 45%;
+//     width: 4rem !important;
+//     height: 5rem !important;
+//     background-color: $space-cadet !important;
+//     color: $cultured !important;
+//     border-radius: .5rem;
+//     transition: all 0.2s ease;
+//     &:hover {
+//         background-color: $black-coral !important;
+//     }
+// }
+// .owl-carousel .owl-nav .owl-prev {
+//     display: flex;
+//     right: -1rem;
+// }
+// .owl-carousel .owl-nav .owl-next {
+//     display: flex;
+//     left: -5rem;
+// }
