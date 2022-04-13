@@ -88,3 +88,28 @@ $(document).ready(function () {
         },
     });
 });
+
+$(document).ready(function () {
+    $(".best-sells__box__carousel").owlCarousel({
+        autoplay: true,
+        autoplayTimeout: 3000,
+        autoplayHoverPause: true,
+        items: 5,
+        loop: false,
+        rtl: true,
+        responsive: {
+            0: {
+                items: 1,
+            },
+            775: {
+                items: 2,
+            },
+            1000: {
+                items: 4,
+            },
+            1200: {
+                items: 5,
+            },
+        },
+    });
+});

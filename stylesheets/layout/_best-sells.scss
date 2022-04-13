@@ -1,0 +1,128 @@
+.best-sells {
+    position: relative;
+    &__tag {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        z-index: 2;
+        & img {
+            position: absolute;
+            top: -0.7rem;
+            width: 35rem;
+        }
+    }
+    &__box {
+        position: relative;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        overflow: hidden;
+        width: 100%;
+        background-color: $gray-e;
+        background-image: image("pattern_slider.svg");
+        background-size: cover;
+        border-radius: 1.5rem;
+        box-shadow: 0 0 2rem $white;
+        &__item {
+            display: block;
+            height: 100%;
+            &__slider {
+                margin: 5rem 0 0;
+                &__card {
+                    position: relative;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    align-items: center;
+                    height: 30rem;
+                    padding: 1rem 0.3rem;
+                    margin: 0.5rem 1rem 0;
+                    background-color: $cultured;
+                    box-shadow: inset 0 0 0.5rem $gray-c;
+                    border-radius: 0.7rem;
+                    & img {
+                        width: 100%;
+                        height: 15rem;
+                        border-radius: 0.7rem;
+                    }
+                    &__latest {
+                        position: relative;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        height: 30rem;
+                        padding: 1rem 0.3rem;
+                        margin: 0.5rem 1rem 0;
+                        background: linear-gradient(to bottom right, #B91111 0%, #E23333 100%);
+                        border-radius: 0.7rem;
+                        &__content{
+                            color: $cultured;
+                            & a{
+                                display: block;
+                                font-size: 1.7rem;
+                                font-weight: bold;
+                                color: $cultured;
+                            }
+                        }
+                    }
+                    &__detail {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        margin: 1rem 0 0;
+                        &__old-price {
+                            display: inline-block;
+                            color: #777;
+                            padding: 0.3rem;
+                            border-radius: 0.7rem;
+                            text-decoration-line: line-through;
+                        }
+                        &__price {
+                            font-size: 1.5rem;
+                            padding: 0.3rem;
+                            border-radius: 0.7rem;
+                            font-weight: bold;
+                            color: $manatee;
+                        }
+                    }
+                    &__title {
+                        margin: 2.5rem 0 0;
+                        text-align: center;
+                    }
+                    &__btns {
+                        &__detail {
+                            position: absolute;
+                            bottom: 1rem;
+                            right: 3rem;
+                            background-color: $space-cadet;
+                            color: $white;
+                            padding: 0.5rem 1rem;
+                            font-weight: bold;
+                            border-radius: 0.5rem;
+                            &:hover {
+                                background-color: $yellow-sun;
+                                color: $space-cadet;
+                            }
+                        }
+                        &__add-to-cart {
+                            position: absolute;
+                            bottom: 1rem;
+                            left: 3rem;
+                            background-color: $manatee;
+                            color: $white;
+                            padding: 0.5rem 1rem;
+                            font-weight: bold;
+                            border-radius: 0.5rem;
+                            &:hover {
+                                background-color: $yellow-sun;
+                                color: $space-cadet;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

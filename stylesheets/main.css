@@ -1688,6 +1688,189 @@ header {
   color: #00798C;
 }
 
+.best-sells {
+  position: relative;
+}
+
+.best-sells__tag {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  z-index: 2;
+}
+
+.best-sells__tag img {
+  position: absolute;
+  top: -0.7rem;
+  width: 35rem;
+}
+
+.best-sells__box {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+  width: 100%;
+  background-color: #eeeeee;
+  background-image: url("../images/pattern_slider.svg");
+  background-size: cover;
+  border-radius: 1.5rem;
+  -webkit-box-shadow: 0 0 2rem #ffffff;
+          box-shadow: 0 0 2rem #ffffff;
+}
+
+.best-sells__box__item {
+  display: block;
+  height: 100%;
+}
+
+.best-sells__box__item__slider {
+  margin: 5rem 0 0;
+}
+
+.best-sells__box__item__slider__card {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 30rem;
+  padding: 1rem 0.3rem;
+  margin: 0.5rem 1rem 0;
+  background-color: #edf2f4ff;
+  -webkit-box-shadow: inset 0 0 0.5rem #cccccc;
+          box-shadow: inset 0 0 0.5rem #cccccc;
+  border-radius: 0.7rem;
+}
+
+.best-sells__box__item__slider__card img {
+  width: 100%;
+  height: 15rem;
+  border-radius: 0.7rem;
+}
+
+.best-sells__box__item__slider__card__latest {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 30rem;
+  padding: 1rem 0.3rem;
+  margin: 0.5rem 1rem 0;
+  background: -webkit-gradient(linear, left top, right bottom, from(#B91111), to(#E23333));
+  background: linear-gradient(to bottom right, #B91111 0%, #E23333 100%);
+  border-radius: 0.7rem;
+}
+
+.best-sells__box__item__slider__card__latest__content {
+  color: #edf2f4ff;
+}
+
+.best-sells__box__item__slider__card__latest__content a {
+  display: block;
+  font-size: 1.7rem;
+  font-weight: bold;
+  color: #edf2f4ff;
+}
+
+.best-sells__box__item__slider__card__detail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1rem 0 0;
+}
+
+.best-sells__box__item__slider__card__detail__old-price {
+  display: inline-block;
+  color: #777;
+  padding: 0.3rem;
+  border-radius: 0.7rem;
+  -webkit-text-decoration-line: line-through;
+          text-decoration-line: line-through;
+}
+
+.best-sells__box__item__slider__card__detail__price {
+  font-size: 1.5rem;
+  padding: 0.3rem;
+  border-radius: 0.7rem;
+  font-weight: bold;
+  color: #00798C;
+}
+
+.best-sells__box__item__slider__card__title {
+  margin: 2.5rem 0 0;
+  text-align: center;
+}
+
+.best-sells__box__item__slider__card__btns__detail {
+  position: absolute;
+  bottom: 1rem;
+  right: 3rem;
+  background-color: #30638E;
+  color: #ffffff;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  border-radius: 0.5rem;
+}
+
+.best-sells__box__item__slider__card__btns__detail:hover {
+  background-color: #EDAE49;
+  color: #30638E;
+}
+
+.best-sells__box__item__slider__card__btns__add-to-cart {
+  position: absolute;
+  bottom: 1rem;
+  left: 3rem;
+  background-color: #00798C;
+  color: #ffffff;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  border-radius: 0.5rem;
+}
+
+.best-sells__box__item__slider__card__btns__add-to-cart:hover {
+  background-color: #EDAE49;
+  color: #30638E;
+}
+
 .ribbon {
   position: absolute;
   left: -.5rem;
