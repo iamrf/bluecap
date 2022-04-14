@@ -988,6 +988,8 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -1047,6 +1049,7 @@ header {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  color: #444444;
 }
 
 .footer__box {
@@ -1132,7 +1135,265 @@ header {
 }
 
 .footer__box__map__address {
+  margin: 2rem 0;
   font-size: 2rem;
+}
+
+.footer__box__contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__box__contact__title {
+  font-size: 1.7rem;
+  margin: 7rem 0 0;
+}
+
+.footer__box__contact__call-btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+}
+
+.footer__box__contact__call-btns__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: #30638E;
+  color: #edf2f4ff;
+  padding: 1rem 1rem;
+  margin: 0.5rem 1rem;
+  border-radius: 0.8rem;
+  font-weight: bold;
+}
+
+.footer__box__contact__call-btns__link:hover {
+  background-color: #003D5B;
+  color: #edf2f4ff;
+}
+
+.footer__box__contact__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+}
+
+.footer__box__contact__social__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: #30638E;
+  color: #edf2f4ff;
+  padding: 1rem 1rem;
+  margin: 0.5rem 1rem;
+  border-radius: 1.2rem;
+  font-weight: bold;
+}
+
+.footer__box__contact__social__btn:hover {
+  background-color: #003D5B;
+  color: #edf2f4ff;
+}
+
+.footer__box__contact__social__btn img {
+  display: block;
+  width: 2rem;
+  height: 2rem;
+}
+
+.footer__box__contact__dates {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  font-weight: bold;
+}
+
+.footer__box__contact__dates__days__day {
+  color: #444444;
+}
+
+.footer__box__contact__dates__days__time {
+  color: #003D5B;
+}
+
+.footer__box__contact__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 1rem 0;
+}
+
+.footer__box__contact__form input {
+  width: 100%;
+  outline: none;
+  background-color: transparent;
+  color: #444444;
+  border: 0.1rem solid #30638E;
+  border-radius: 0.7rem;
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.footer__box__contact__form input:focus {
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 0 1rem #ffffff;
+          box-shadow: 0 0 1rem #ffffff;
+}
+
+.footer__box__contact__form textarea {
+  width: 100%;
+  height: 20rem;
+  outline: none;
+  background-color: transparent;
+  color: #444444;
+  border: 0.1rem solid #30638E;
+  border-radius: 0.7rem;
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  line-height: 1.5;
+}
+
+.footer__box__contact__form textarea:focus {
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 0 1rem #ffffff;
+          box-shadow: 0 0 1rem #ffffff;
+}
+
+.footer__box__contact__form input[type="submit"] {
+  cursor: pointer;
+  background-color: #30638E;
+  color: #edf2f4ff;
+  font-weight: bold;
+  font-size: 1.7rem;
+  padding: 1rem 0;
+  width: 30% !important;
+}
+
+.footer__box__contact__form input[type="submit"]:hover {
+  background-color: #003D5B;
+  color: #edf2f4ff;
+}
+
+.copyrights {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.copyrights__content {
+  background-color: #30638E;
+  color: #edf2f4ff;
+  padding: 1rem 2rem;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.copyrights__content a {
+  color: #edf2f4ff;
+}
+
+.enamad {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
 }
 
 /* Create a sticky/fixed navbar with js */
