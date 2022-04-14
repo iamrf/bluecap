@@ -1,8 +1,18 @@
+// Dana-light font
 @font-face {
-    font-family: "vazir";
-    src: font("eot/Vazir-Thin.eot");
-    src: font("eot/Vazir-Thin.eot") format("embedded-opentype"),
-    font("woff2/Vazir-Thin.woff2") format("woff2"),
-    font("woff/Vazir-Thin.woff") format("woff"),
-    font("ttf/Vazir-Thin.ttf") format("truetype");
+    font-family: "dana-light";
+    src: font("eot/dana-light.eot");
+    src: font("eot/dana-light.eot") format("embedded-opentype"),
+    font("woff2/dana-light.woff2") format("woff2"),
+    font("woff/dana-light.woff") format("woff"),
+    font("ttf/dana-light.ttf") format("truetype");
+}
+// Dana-medium font
+@font-face {
+    font-family: "dana-medium";
+    src: font("eot/dana-medium.eot");
+    src: font("eot/dana-medium.eot") format("embedded-opentype"),
+    font("woff2/dana-medium.woff2") format("woff2"),
+    font("woff/dana-medium.woff") format("woff"),
+    font("ttf/dana-medium.ttf") format("truetype");
 }

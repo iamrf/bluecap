@@ -6,7 +6,9 @@
 
 $base-path: '../';
 
-$font-stack: "vazir", Verdana, Geneva, Tahoma, sans-serif;
+$font-stack: "dana-medium", "dana-light",Verdana, Geneva, Tahoma, sans-serif;
+$font-stack-light: "dana-light", "dana-medium", Verdana, Geneva, Tahoma, sans-serif;
+$font-stack-medium: "dana-medium","dana-light", Verdana, Geneva, Tahoma, sans-serif;
 
 // Colors
 $black-coral: #003D5B;

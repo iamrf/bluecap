@@ -52,6 +52,8 @@
         height: auto;
         margin: 0 1rem;
         padding: 1rem 7rem;
+        font-family: $font-stack-light;
+
         &__icon {
             position: absolute;
             top: -2.5rem;
@@ -166,7 +168,7 @@
             &__dates {
                 display: flex;
                 flex-direction: row;
-                justify-content: space-between;
+                justify-content: space-around;
                 align-items: center;
                 flex-wrap: wrap;
                 width: 100%;

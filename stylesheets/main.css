@@ -362,7 +362,7 @@ html {
 }
 
 body {
-  font-family: "vazir", Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "dana-medium", "dana-light", Verdana, Geneva, Tahoma, sans-serif;
   font-size: 1.5rem;
   margin: 0;
   -webkit-transition: all 0.3s ease;
@@ -393,9 +393,15 @@ a:hover {
 }
 
 @font-face {
-  font-family: "vazir";
-  src: url("../fonts/eot/Vazir-Thin.eot");
-  src: url("../fonts/eot/Vazir-Thin.eot") format("embedded-opentype"), url("../fonts/woff2/Vazir-Thin.woff2") format("woff2"), url("../fonts/woff/Vazir-Thin.woff") format("woff"), url("../fonts/ttf/Vazir-Thin.ttf") format("truetype");
+  font-family: "dana-light";
+  src: url("../fonts/eot/dana-light.eot");
+  src: url("../fonts/eot/dana-light.eot") format("embedded-opentype"), url("../fonts/woff2/dana-light.woff2") format("woff2"), url("../fonts/woff/dana-light.woff") format("woff"), url("../fonts/ttf/dana-light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "dana-medium";
+  src: url("../fonts/eot/dana-medium.eot");
+  src: url("../fonts/eot/dana-medium.eot") format("embedded-opentype"), url("../fonts/woff2/dana-medium.woff2") format("woff2"), url("../fonts/woff/dana-medium.woff") format("woff"), url("../fonts/ttf/dana-medium.ttf") format("truetype");
 }
 
 /**
@@ -1071,6 +1077,7 @@ header {
   height: auto;
   margin: 0 1rem;
   padding: 1rem 7rem;
+  font-family: "dana-light", "dana-medium", Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .footer__box__icon {
@@ -1261,9 +1268,8 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
