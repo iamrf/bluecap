@@ -117,54 +117,26 @@
                         margin: 2.5rem 0 0;
                         text-align: center;
                     }
-                    &__btns {
-                        &__detail {
-                            position: absolute;
-                            bottom: 1rem;
-                            right: 3rem;
-                            background-color: $space-cadet;
-                            color: $white;
-                            padding: 0.5rem 1rem;
-                            font-weight: bold;
-                            border-radius: 0.5rem;
-                            &:hover {
-                                background-color: $yellow-sun;
-                                color: $space-cadet;
-                            }
-                        }
-                        &__add-to-cart {
-                            position: absolute;
-                            bottom: 1rem;
-                            left: 3rem;
-                            background-color: $manatee;
-                            color: $white;
-                            padding: 0.5rem 1rem;
-                            font-weight: bold;
-                            border-radius: 0.5rem;
-                            &:hover {
-                                background-color: $yellow-sun;
-                                color: $space-cadet;
-                            }
-                        }
-                    }
                 }
             }
         }
     }
 }
 
-
-
+// .owl-carousel .owl-nav{
+//     display: flex !important;
+//     width: 50% !important;
+// }
 
 // .owl-theme .owl-nav .disabled {
 //     display: none !important;
 // }
 
-// .owl-theme .owl-nav {
-//     position: initial;
+// .owl-carousel .owl-nav {
+//     width: 100% !important;
 // }
-// .owl-next,
-// .owl-prev {
+// .owl-carousel .owl-next,
+// .owl-carousel .owl-prev {
 //     position: absolute;
 //     top: 45%;
 //     width: 4rem !important;
@@ -178,10 +150,7 @@
 //     }
 // }
 // .owl-carousel .owl-nav .owl-prev {
-//     display: flex;
 //     right: -1rem;
 // }
 // .owl-carousel .owl-nav .owl-next {
-//     display: flex;
-//     left: -5rem;
 // }

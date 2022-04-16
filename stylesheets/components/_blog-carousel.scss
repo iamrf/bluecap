@@ -1,0 +1,85 @@
+.blog-carousel {
+    position: relative;
+    user-select: none;
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        &__title,
+        &__more {
+            background-color: $red-sun;
+            color: $cultured;
+            padding: 1rem 1.5rem;
+            border-radius: 2rem;
+        }
+        &__title {
+            border-bottom-right-radius: 0 !important;
+        }
+        &__more {
+            & a {
+                color: $cultured;
+            }
+        }
+    }
+    &__body {
+        &__item {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            border-top-left-radius: 2rem;
+            border-top-right-radius: 2rem;
+            background-color: #e5e5e5;
+            margin: 1rem 0 0 1rem;
+            height: 50rem;
+            overflow: hidden;
+            transition: all 0.2s ease;
+            &:hover {
+                margin: 0 0 0 1rem !important;
+                box-shadow: -0.4rem 0.4rem 0.5rem $gray-c;
+            }
+            &__header {
+                padding: 0;
+                object-fit: cover;
+                & img {
+                    width: 100%;
+                    height: 20rem;
+                    object-fit: cover;
+                }
+            }
+            &__body {
+                padding: 1rem 1.5rem;
+                &__title {
+                    font-size: 1.8rem;
+                    font-weight: bold;
+                    line-height: 1.7;
+                    text-align: justify;
+                }
+                &__content {
+                    font-family: $font-stack-light;
+                    font-size: 1.6rem;
+                    text-align: justify;
+                    line-height: 1.7;
+                    height: 13rem;
+                    overflow: hidden;
+                }
+            }
+            &__footer {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+                &__more {
+                    color: $gray-4;
+                    font-size: 1.8rem;
+                    font-weight: bold;
+                    padding: 2.5rem 1rem;
+                }
+            }
+        }
+    }
+}

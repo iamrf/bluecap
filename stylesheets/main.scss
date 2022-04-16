@@ -22,15 +22,14 @@
   'layout/header',
   'layout/footer',
   'layout/navbar',
-  'layout/offers',
   'layout/categories',
-  'layout/banners',
-  'layout/blog-posts';
+  'layout/banners';
 
 // 5. Components
 @import
   'components/button',
-  'components/products_carousel',
+  'components/blog-carousel',
+  'components/products-carousel',
   'components/ribbon';
 
 // 6. Page-specific styles

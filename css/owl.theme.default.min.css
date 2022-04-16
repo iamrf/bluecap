@@ -9,7 +9,7 @@
     -webkit-tap-highlight-color: transparent;
 }
 .owl-theme .owl-nav {
-    margin-top: 10px;
+    margin-top: 0px;
 }
 .owl-theme .owl-nav [class*="owl-"] {
     color: #edf2f4ff;
@@ -41,7 +41,7 @@
     width: 10px;
     height: 10px;
     margin: 5px 7px;
-    background: #edf2f4ff;
+    background: #c4c4c4;
     display: block;
     -webkit-backface-visibility: visible;
     transition: all 0.2s ease;
@@ -52,5 +52,5 @@
 }
 .owl-theme .owl-dots .owl-dot.active span,
 .owl-theme .owl-dots .owl-dot:hover span {
-    background: #edf2f4ff;
+    background: #30638E;
 }

@@ -33,30 +33,6 @@ $(document).ready(function () {
         dots: true,
     });
 
-    $(".blog-posts__box__carousel").owlCarousel({
-        autoplay: true,
-        autoplayTimeout: 5000,
-        autoplayHoverPause: true,
-        items: 4,
-        loop: true,
-        rtl: true,
-        responsive: {
-            0: {
-                items: 1,
-            },
-            775: {
-                items: 2,
-            },
-            1000: {
-                items: 3,
-            },
-            1200: {
-                items: 4,
-                loop: true,
-            },
-        },
-    });
-
     $(".product-carousel__box__carousel__nav").owlCarousel({
         autoplay: true,
         autoplayTimeout: 3000,
@@ -64,7 +40,8 @@ $(document).ready(function () {
         items: 5,
         loop: false,
         rtl: true,
-        nav: true,
+        nav: false,
+        dots: false,
         navText: ['<i class="fa-solid fa-angle-right fa-2x"></i>', '<i class="fa-solid fa-angle-left fa-2x"></i>'],
         responsive: {
             0: {
@@ -106,6 +83,33 @@ $(document).ready(function () {
             },
         },
     });
+
+    $(".blog-carousel__body__carousel").owlCarousel({
+        autoplay: true,
+        autoplayTimeout: 3000,
+        autoplayHoverPause: true,
+        items: 4,
+        loop: true,
+        rewind: false,
+        rtl: true,
+        nav: false,
+        dots:true,
+        responsive: {
+            0: {
+                items: 1,
+            },
+            775: {
+                items: 2,
+            },
+            1000: {
+                items: 3,
+            },
+            1200: {
+                items: 4,
+            },
+        },
+    });
+
 });
 
 // Google Map
