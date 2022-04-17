@@ -11,85 +11,82 @@
         <link rel="stylesheet" href="css/owl.theme.default.min.css" />
     </head>
     <body>
-        <!-- Top sticky navbar -->
+        <!-- Top Navbar -->
         <nav>
-            <div class="navbar container" id="navbar">
-                <div class="navbar__item">
-                    <img src="images/logo.png" alt="Logo" id="nav-logo" />
-                </div>
-                <!-- Burger menu -->
-                <input type="checkbox" id="burgermenu" class="burger-menu" />
-                <label for="burgermenu" class="burger-menu__label"><i class="fas fa-bars"></i></label>
-                <div class="navbar__item mobile-wrap">
-                    <ul>
-                        <li class="nav-list">
-                            <a href="#" class="nav-list__link">خانه</a>
-                            <a href="#" class="nav-list__link">محصولات</a>
-                            <a href="#" class="nav-list__link">آموزش</a>
-                            <a href="#" class="nav-list__link">راهنما</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="navbar__item">
-                    <div class="nav-auth">
-                        <a href="#" class="nav-auth__link"><i class="fas fa-magnifying-glass"></i></a>
-                        <a href="#" class="nav-auth__link"><i class="fas fa-shopping-basket"></i></a>
-                        <a href="#" class="nav-auth__link"><i class="fas fa-user"></i></a>
+            <div class="container">
+                <div class="navbar">
+                    <div class="navbar__logo">
+                        <div class="navbar__logo__pic">
+                            <img src="images/nav/logotype.png" class="navbar__logo__pic__logotype" alt="Logotype" />
+                            <img src="images/nav/logo.png" class="navbar__logo__pic__logo" alt="Logo" />
+                        </div>
+                        <div class="navbar__logo__description mt-5">بزرگترین فروشگاه امنیت خودرو</div>
+                    </div>
+                    <div class="navbar__list">
+                        <form class="navbar__list__search">
+                            <input type="text" id="nav-search" name="nav-search" placeholder="محصول مورد نظر را جستجو کنید" />
+                            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                        </form>
+                        <ul class="navbar__list__menu">
+                            <li>
+                                <a href="#" class="navbar__list__menu__link">
+                                    <img src="images/nav/burger.svg" alt="">&nbsp;
+                                    دسته بندی محصولات
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="navbar__list__menu__link">
+پرفروش ترین ها
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="navbar__list__menu__link">
+وبلاگ
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="navbar__list__menu__link">
+راهنما
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="navbar__list__menu__link">
+ارتباط با ما
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="navbar__auth">
+                        <div class="navbar__auth__user">
+                            <div class="navbar__auth__user__avatar">
+                                <img src="images/nav/user.svg" alt="user avatar" />
+                            </div>
+                            <div class="navbar__auth__user__text">
+                                <span class="navbar__auth__user__text__welcome"> خوش آمدید </span>
+                                <span class="navbar__auth__user__text__name"> کاربر مهمان </span>
+                            </div>
+                            <div class="navbar__auth__user__login">
+                                <div class="navbar__auth__user__login__form">
+                                    <a href="#" class="navbar__auth__user__login__form__link"> <i class="fa-solid fa-user"></i>&nbsp; ورود کاربر </a>
+                                    <a href="#" class="navbar__auth__user__login__form__link"> <i class="fa-solid fa-user-plus"></i>&nbsp; ثبت نام </a>
+                                    <a href="#" class="navbar__auth__user__login__form__link"> <i class="fa-solid fa-barcode"></i>&nbsp; پیگیری کالا </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="navbar__auth__basket">
+                            <img src="images/nav/basket.svg" alt="shopping basket" />
+                            <span class="navbar__auth__basket__num">0</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </nav>
 
-        <!-- Header Hero -->
+        <!-- Header -->
         <header>
-            <div class="hero">
-                <div class="hero__part">
-                    <div class="hero__title">
-                        <h1 class="hero__title__site-title">محصولات امنیتی حامد</h1>
-                        <h2 class="hero__title__site-description">بزرگترین فروشگاه محصولات امنیتی شامل قفل کلید ریموت و ...</h2>
-                        <a href="#" class="hero__title__cta">مشاهده محصولات</a>
-                    </div>
-                </div>
-                <div class="hero__part">
-                    <div class="hero__slider">
-                        <div class="hero__slider__carousel">
-                            <div class="owl-carousel owl-theme hero-carousel">
-                                <div class="hero__slider__carousel__item">
-                                    <img class="hero__slider__carousel__item__image" src="images/keys/car_keys003.png" />
-                                    <div class="hero__slider__carousel__item__content">
-                                        <h3>سوییچ فابریک پژو 407</h3>
-                                        <h4>ساخت ایران خودرو با 2 سال ضمانت</h4>
-                                        <div class="carousel-links">
-                                            <a class="carousel-links__details" href="#">جزییات</a>
-                                            <a class="carousel-links__add-to-cart" href="#"><i class="fas fa-cart-plus"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="hero__slider__carousel__item">
-                                    <img class="hero__slider__carousel__item__image" src="images/keys/car_keys001.png" />
-                                    <div class="hero__slider__carousel__item__content">
-                                        <h3>سوییچ فابریک پژو 407</h3>
-                                        <h4>ساخت ایران خودرو با 2 سال ضمانت</h4>
-                                        <div class="carousel-links">
-                                            <a class="carousel-links__details" href="#">جزییات</a>
-                                            <a class="carousel-links__add-to-cart" href="#"><i class="fas fa-cart-plus"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="hero__slider__carousel__item">
-                                    <img class="hero__slider__carousel__item__image" src="images/keys/car_keys005.png" />
-                                    <div class="hero__slider__carousel__item__content">
-                                        <h3>سوییچ فابریک پژو 407</h3>
-                                        <h4>ساخت ایران خودرو با 2 سال ضمانت</h4>
-                                        <div class="carousel-links">
-                                            <a class="carousel-links__details" href="#">جزییات</a>
-                                            <a class="carousel-links__add-to-cart" href="#"><i class="fas fa-cart-plus"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            <div class="container mt-20">
+                <div class="header">
+                    <img src="images/header_elements/header_1.jpg" class="responsive" alt="" />
                 </div>
             </div>
         </header>
@@ -548,9 +545,7 @@
         <section class="blog-carousel mt-100" id="blog-carousel">
             <div class="container">
                 <div class="blog-carousel__header">
-                    <div class="blog-carousel__header__title">
-                        مطالب تخصصی و آموزشی
-                    </div>
+                    <div class="blog-carousel__header__title">مطالب تخصصی و آموزشی</div>
                     <div class="blog-carousel__header__more">
                         <a href="#">مشاهده همه</a>
                     </div>
@@ -559,195 +554,195 @@
                     <div class="owl-carousel owl-theme blog-carousel__body__carousel">
                         <div class="blog-carousel__body__item">
                             <div class="blog-carousel__body__item__header">
-                                <img src="images/blog/blog_sample1.jpg" class="responsive" alt="">
+                                <img src="images/blog/blog_sample1.jpg" class="responsive" alt="" />
                             </div>
                             <div class="blog-carousel__body__item__body">
-                                <div class="blog-carousel__body__item__body__title">
-                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت 
-                                </div>
+                                <div class="blog-carousel__body__item__body__title">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت</div>
                                 <div class="blog-carousel__body__item__body__content mt-10">
-                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد.
+                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و
+                                    برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و
+                                    متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد.
                                 </div>
                             </div>
                             <div class="blog-carousel__body__item__footer">
                                 <a href="#" class="blog-carousel__body__item__footer__more">
-                                    ادامه مطلب 
+                                    ادامه مطلب
                                     <i class="fa-solid fa-angle-left"></i>
                                 </a>
                             </div>
                         </div>
                         <div class="blog-carousel__body__item">
                             <div class="blog-carousel__body__item__header">
-                                <img src="images/blog/blog_sample2.jpg" alt="">
+                                <img src="images/blog/blog_sample2.jpg" alt="" />
                             </div>
                             <div class="blog-carousel__body__item__body">
-                                <div class="blog-carousel__body__item__body__title">
-                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت 
-                                </div>
+                                <div class="blog-carousel__body__item__body__title">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت</div>
                                 <div class="blog-carousel__body__item__body__content mt-10">
-                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد.
+                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و
+                                    برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و
+                                    متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد.
                                 </div>
                             </div>
                             <div class="blog-carousel__body__item__footer">
                                 <a href="#" class="blog-carousel__body__item__footer__more">
-                                    ادامه مطلب 
+                                    ادامه مطلب
                                     <i class="fa-solid fa-angle-left"></i>
                                 </a>
                             </div>
                         </div>
                         <div class="blog-carousel__body__item">
                             <div class="blog-carousel__body__item__header">
-                                <img src="images/blog/blog_sample3.jpg" alt="">
+                                <img src="images/blog/blog_sample3.jpg" alt="" />
                             </div>
                             <div class="blog-carousel__body__item__body">
-                                <div class="blog-carousel__body__item__body__title">
-                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت 
-                                </div>
+                                <div class="blog-carousel__body__item__body__title">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت</div>
                                 <div class="blog-carousel__body__item__body__content mt-10">
-                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد.
+                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و
+                                    برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و
+                                    متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد.
                                 </div>
                             </div>
                             <div class="blog-carousel__body__item__footer">
                                 <a href="#" class="blog-carousel__body__item__footer__more">
-                                    ادامه مطلب 
+                                    ادامه مطلب
                                     <i class="fa-solid fa-angle-left"></i>
                                 </a>
                             </div>
                         </div>
                         <div class="blog-carousel__body__item">
                             <div class="blog-carousel__body__item__header">
-                                <img src="images/blog/blog_sample4.jpg" alt="">
+                                <img src="images/blog/blog_sample4.jpg" alt="" />
                             </div>
                             <div class="blog-carousel__body__item__body">
-                                <div class="blog-carousel__body__item__body__title">
-                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت 
-                                </div>
+                                <div class="blog-carousel__body__item__body__title">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت</div>
                                 <div class="blog-carousel__body__item__body__content mt-10">
-                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد.
+                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و
+                                    برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و
+                                    متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد.
                                 </div>
                             </div>
                             <div class="blog-carousel__body__item__footer">
                                 <a href="#" class="blog-carousel__body__item__footer__more">
-                                    ادامه مطلب 
+                                    ادامه مطلب
                                     <i class="fa-solid fa-angle-left"></i>
                                 </a>
                             </div>
                         </div>
                         <div class="blog-carousel__body__item">
                             <div class="blog-carousel__body__item__header">
-                                <img src="images/blog/blog_sample2.jpg" alt="">
+                                <img src="images/blog/blog_sample2.jpg" alt="" />
                             </div>
                             <div class="blog-carousel__body__item__body">
-                                <div class="blog-carousel__body__item__body__title">
-                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت 
-                                </div>
+                                <div class="blog-carousel__body__item__body__title">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت</div>
                                 <div class="blog-carousel__body__item__body__content mt-10">
-                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد.
+                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و
+                                    برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و
+                                    متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد.
                                 </div>
                             </div>
                             <div class="blog-carousel__body__item__footer">
                                 <a href="#" class="blog-carousel__body__item__footer__more">
-                                    ادامه مطلب 
+                                    ادامه مطلب
                                     <i class="fa-solid fa-angle-left"></i>
                                 </a>
                             </div>
                         </div>
                         <div class="blog-carousel__body__item">
                             <div class="blog-carousel__body__item__header">
-                                <img src="images/blog/blog_sample3.jpg" alt="">
+                                <img src="images/blog/blog_sample3.jpg" alt="" />
                             </div>
                             <div class="blog-carousel__body__item__body">
-                                <div class="blog-carousel__body__item__body__title">
-                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت 
-                                </div>
+                                <div class="blog-carousel__body__item__body__title">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت</div>
                                 <div class="blog-carousel__body__item__body__content mt-10">
-                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد.
+                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و
+                                    برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و
+                                    متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد.
                                 </div>
                             </div>
                             <div class="blog-carousel__body__item__footer">
                                 <a href="#" class="blog-carousel__body__item__footer__more">
-                                    ادامه مطلب 
+                                    ادامه مطلب
                                     <i class="fa-solid fa-angle-left"></i>
                                 </a>
                             </div>
                         </div>
                         <div class="blog-carousel__body__item">
                             <div class="blog-carousel__body__item__header">
-                                <img src="images/blog/blog_sample1.jpg" class="responsive" alt="">
+                                <img src="images/blog/blog_sample1.jpg" class="responsive" alt="" />
                             </div>
                             <div class="blog-carousel__body__item__body">
-                                <div class="blog-carousel__body__item__body__title">
-                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت 
-                                </div>
+                                <div class="blog-carousel__body__item__body__title">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت</div>
                                 <div class="blog-carousel__body__item__body__content mt-10">
-                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد.
+                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و
+                                    برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و
+                                    متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد.
                                 </div>
                             </div>
                             <div class="blog-carousel__body__item__footer">
                                 <a href="#" class="blog-carousel__body__item__footer__more">
-                                    ادامه مطلب 
+                                    ادامه مطلب
                                     <i class="fa-solid fa-angle-left"></i>
                                 </a>
                             </div>
                         </div>
                         <div class="blog-carousel__body__item">
                             <div class="blog-carousel__body__item__header">
-                                <img src="images/blog/blog_sample2.jpg" alt="">
+                                <img src="images/blog/blog_sample2.jpg" alt="" />
                             </div>
                             <div class="blog-carousel__body__item__body">
-                                <div class="blog-carousel__body__item__body__title">
-                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت 
-                                </div>
+                                <div class="blog-carousel__body__item__body__title">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت</div>
                                 <div class="blog-carousel__body__item__body__content mt-10">
-                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد.
+                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و
+                                    برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و
+                                    متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد.
                                 </div>
                             </div>
                             <div class="blog-carousel__body__item__footer">
                                 <a href="#" class="blog-carousel__body__item__footer__more">
-                                    ادامه مطلب 
+                                    ادامه مطلب
                                     <i class="fa-solid fa-angle-left"></i>
                                 </a>
                             </div>
                         </div>
                         <div class="blog-carousel__body__item">
                             <div class="blog-carousel__body__item__header">
-                                <img src="images/blog/blog_sample3.jpg" alt="">
+                                <img src="images/blog/blog_sample3.jpg" alt="" />
                             </div>
                             <div class="blog-carousel__body__item__body">
-                                <div class="blog-carousel__body__item__body__title">
-                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت 
-                                </div>
+                                <div class="blog-carousel__body__item__body__title">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت</div>
                                 <div class="blog-carousel__body__item__body__content mt-10">
-                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد.
+                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و
+                                    برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و
+                                    متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد.
                                 </div>
                             </div>
                             <div class="blog-carousel__body__item__footer">
                                 <a href="#" class="blog-carousel__body__item__footer__more">
-                                    ادامه مطلب 
+                                    ادامه مطلب
                                     <i class="fa-solid fa-angle-left"></i>
                                 </a>
                             </div>
                         </div>
                         <div class="blog-carousel__body__item">
                             <div class="blog-carousel__body__item__header">
-                                <img src="images/blog/blog_sample4.jpg" alt="">
+                                <img src="images/blog/blog_sample4.jpg" alt="" />
                             </div>
                             <div class="blog-carousel__body__item__body">
-                                <div class="blog-carousel__body__item__body__title">
-                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت 
-                                </div>
+                                <div class="blog-carousel__body__item__body__title">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت</div>
                                 <div class="blog-carousel__body__item__body__content mt-10">
-                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد.
+                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و
+                                    برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و
+                                    متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد.
                                 </div>
                             </div>
                             <div class="blog-carousel__body__item__footer">
                                 <a href="#" class="blog-carousel__body__item__footer__more">
-                                    ادامه مطلب 
+                                    ادامه مطلب
                                     <i class="fa-solid fa-angle-left"></i>
                                 </a>
                             </div>
                         </div>
-                      </div>
+                    </div>
                 </div>
             </div>
         </section>
