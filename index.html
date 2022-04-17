@@ -29,30 +29,19 @@
                         </form>
                         <ul class="navbar__list__menu">
                             <li>
-                                <a href="#" class="navbar__list__menu__link">
-                                    <img src="images/nav/burger.svg" alt="">&nbsp;
-                                    دسته بندی محصولات
-                                </a>
+                                <a href="#" class="navbar__list__menu__link"> <img src="images/nav/burger.svg" alt="" />&nbsp; دسته بندی محصولات </a>
                             </li>
                             <li>
-                                <a href="#" class="navbar__list__menu__link">
-پرفروش ترین ها
-                                </a>
+                                <a href="#" class="navbar__list__menu__link"> پرفروش ترین ها </a>
                             </li>
                             <li>
-                                <a href="#" class="navbar__list__menu__link">
-وبلاگ
-                                </a>
+                                <a href="#" class="navbar__list__menu__link"> وبلاگ </a>
                             </li>
                             <li>
-                                <a href="#" class="navbar__list__menu__link">
-راهنما
-                                </a>
+                                <a href="#" class="navbar__list__menu__link"> راهنما </a>
                             </li>
                             <li>
-                                <a href="#" class="navbar__list__menu__link">
-ارتباط با ما
-                                </a>
+                                <a href="#" class="navbar__list__menu__link"> ارتباط با ما </a>
                             </li>
                         </ul>
                     </div>
@@ -67,7 +56,9 @@
                             </div>
                             <div class="navbar__auth__user__login">
                                 <div class="navbar__auth__user__login__form">
-                                    <a href="#" class="navbar__auth__user__login__form__link"> <i class="fa-solid fa-user"></i>&nbsp; ورود کاربر </a>
+                                    <a href="#" class="navbar__auth__user__login__form__link" onclick="document.getElementById('signin-modal').style.display='block'">
+                                        <i class="fa-solid fa-user"></i>&nbsp; ورود کاربر
+                                    </a>
                                     <a href="#" class="navbar__auth__user__login__form__link"> <i class="fa-solid fa-user-plus"></i>&nbsp; ثبت نام </a>
                                     <a href="#" class="navbar__auth__user__login__form__link"> <i class="fa-solid fa-barcode"></i>&nbsp; پیگیری کالا </a>
                                 </div>
@@ -81,6 +72,39 @@
                 </div>
             </div>
         </nav>
+
+        <div id="signin-modal" class="signin-modal">
+            <div class="signin-modal__content">
+                <div class="signin-modal__container">
+                    <span onclick="document.getElementById('signin-modal').style.display='none'" class="signin-modal__close-btn"><i class="fa-solid fa-xmark"></i></span>
+
+                    <div id="modal-sign-in" class="signin-modal__modal-page">
+                        <h2>ورود</h2>
+                        <p>عضو نیستید؟</p>
+                        <button class="signin-modal__modal-page__btn" onclick="openPage('modal-sign-up')"><i class="fa-solid fa-user-plus"></i>&nbsp; عضویت در سایت</button>
+                        <form class="signin-modal__modal-page__form mt-20">
+                            <input type="email" id="signin-email" name="signin-email" placeholder="ایمیل خود را وارد کنید" />
+                            <input type="password" id="signin-password" name="signin-password" placeholder="رمز عبور را وارد کنید" />
+                            <input type="checkbox" id="signin-remember" name="signin-remember" />
+                            <label for="signin-remember">من را به خاطر بسپار</label>
+                            <button class="signin-modal__modal-page__btn mt-30"><i class="fa-solid fa-right-to-bracket"></i> &nbsp; ورود</button>
+                        </form>
+                    </div>
+
+                    <div id="modal-sign-up" class="signin-modal__modal-page" style="display: none">
+                        <h2>ثبت نام</h2>
+                        <p>قبلا ثبت نام کردید‌؟</p>
+                        <button class="signin-modal__modal-page__btn" onclick="openPage('modal-sign-in')"><i class="fa-solid fa-right-to-bracket"></i>&nbsp; ورود</button>
+                        <form class="signin-modal__modal-page__form mt-20">
+                            <input type="email" id="signin-email" name="signin-email" placeholder="ایمیل خود را وارد کنید" />
+                            <input type="password" id="signin-password" name="signin-password" placeholder="رمز عبور را وارد کنید" />
+                            <input type="password" id="signin-repassword" name="signin-repassword" placeholder="رمز عبور را تکرار کنید" />
+                            <button class="signin-modal__modal-page__btn mt-30"><i class="fa-solid fa-user-plus"></i> &nbsp; ثبت نام</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <!-- Header -->
         <header>

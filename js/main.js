@@ -93,7 +93,7 @@ $(document).ready(function () {
         rewind: false,
         rtl: true,
         nav: false,
-        dots:true,
+        dots: true,
         responsive: {
             0: {
                 items: 1,
@@ -109,7 +109,6 @@ $(document).ready(function () {
             },
         },
     });
-
 });
 
 // Google Map
@@ -119,4 +118,33 @@ function myMap() {
         zoom: 15,
     };
     var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+}
+
+// ***  Modal    ***
+// Get the modal
+var modal = document.getElementById("signin-modal");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function () {
+    modal.style.display = "none";
+};
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function (event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+};
+
+// Modal Tabulator page
+function openPage(pageName) {
+    var i;
+    var x = document.getElementsByClassName("signin-modal__modal-page");
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+    }
+    document.getElementById(pageName).style.display = "flex";
 }

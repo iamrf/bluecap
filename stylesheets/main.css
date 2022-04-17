@@ -1926,6 +1926,168 @@ header {
   text-align: center;
 }
 
+.signin-modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 5;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: black;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+}
+
+.signin-modal__content {
+  position: relative;
+  background-color: #fefefe;
+  margin: 5% auto;
+  /* 15% from the top and centered */
+  padding: 0;
+  border: 0.1rem solid #888;
+  width: 30rem;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 0.6rem 2rem 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 0.6rem 2rem 0 rgba(0, 0, 0, 0.19);
+  -webkit-animation-name: animatetop;
+          animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+          animation-duration: 0.4s;
+}
+
+.signin-modal__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: auto;
+  padding: 1rem;
+}
+
+.signin-modal__modal-page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: auto;
+}
+
+.signin-modal__modal-page h2 {
+  color: #444444;
+}
+
+.signin-modal__modal-page p {
+  font-family: "dana-light", "dana-medium", Verdana, Geneva, Tahoma, sans-serif;
+  margin: 2rem 0 0.5rem;
+}
+
+.signin-modal__modal-page__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #0189fe;
+  color: #ffffff;
+  font-size: 1.7rem;
+  padding: 1rem 1.5rem;
+  outline: none;
+  border: 0;
+  border-radius: 0.7rem;
+  cursor: pointer;
+}
+
+.signin-modal__modal-page__form input {
+  outline: none;
+  width: 100%;
+  height: 4rem;
+  border: 0.1rem solid #777777;
+  border-radius: 0.7rem;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+}
+
+.signin-modal__modal-page__form input[type="checkbox"] {
+  width: 1.5rem !important;
+  height: 1.5rem !important;
+  color: #777777;
+}
+
+.signin-modal__modal-page__form label {
+  color: #777777;
+  font-family: "dana-light", "dana-medium", Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.2rem;
+}
+
+.signin-modal__close-btn {
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+  color: #666666;
+  padding: 1rem;
+  border-radius: 1rem;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.signin-modal__close-btn:hover {
+  color: #0189fe;
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {
+    top: -30rem;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+@keyframes animatetop {
+  from {
+    top: -30rem;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
 .ribbon {
   position: absolute;
   left: -.5rem;
