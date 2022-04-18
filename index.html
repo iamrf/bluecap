@@ -28,7 +28,7 @@
                             <button><i class="fa-solid fa-magnifying-glass"></i></button>
                         </form>
                         <ul class="navbar__list__menu">
-                            <li>
+                            <li class="navbar__list__menu__link__categories">
                                 <a href="#" class="navbar__list__menu__link"> <img src="images/nav/burger.svg" alt="" />&nbsp; دسته بندی محصولات </a>
                             </li>
                             <li>
@@ -54,6 +54,9 @@
                                 <span class="navbar__auth__user__text__welcome"> خوش آمدید </span>
                                 <span class="navbar__auth__user__text__name"> کاربر مهمان </span>
                             </div>
+                            <div class="navbar__auth__user__arrow">
+                                <i class="fa-solid fa-angle-down"></i>
+                            </div>
                             <div class="navbar__auth__user__login">
                                 <div class="navbar__auth__user__login__form">
                                     <a href="#" class="navbar__auth__user__login__form__link" onclick="document.getElementById('signin-modal').style.display='block'">
@@ -64,15 +67,99 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="navbar__auth__basket">
-                            <img src="images/nav/basket.svg" alt="shopping basket" />
-                            <span class="navbar__auth__basket__num">0</span>
+                    </div>
+                    <div class="navbar__basket" id="basket" onclick="toggleShow()">
+                        <img src="images/nav/basket.svg" alt="shopping basket" />
+                        <span class="navbar__basket__num">0</span>
+                        <div class="navbar__basket__list" id="basket-list">
+                            <div class="navbar__basket__list__item">
+                                <div class="navbar__basket__list__item__content">
+                                    <div class="navbar__basket__list__item__content__pic">
+                                        <a href="#">
+                                            <img src="images/tmp/basket_1.jpg" alt="Shopping item" />
+                                        </a>
+                                    </div>
+                                    <div class="navbar__basket__list__item__content__detail">
+                                        <a href="#"> لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ </a>
+                                    </div>
+                                    <div class="navbar__basket__list__item__content__action">
+                                        <a href="#">
+                                            <i class="fa-solid fa-trash-can"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="navbar__basket__list__item__footer">
+                                    <div class="navbar__basket__list__item__footer__price">2,500,000 تومان</div>
+                                    <div class="navbar__basket__list__item__footer__quantity">
+                                        <a href="#" class="navbar__basket__list__item__footer__quantity__plus">+</a>
+                                        <span> 3</span>
+                                        <a href="#" class="navbar__basket__list__item__footer__quantity__minus">-</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="navbar__basket__list__item">
+                                <div class="navbar__basket__list__item__content">
+                                    <div class="navbar__basket__list__item__content__pic">
+                                        <a href="#">
+                                            <img src="images/tmp/basket_1.jpg" alt="Shopping item" />
+                                        </a>
+                                    </div>
+                                    <div class="navbar__basket__list__item__content__detail">
+                                        <a href="#"> لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ </a>
+                                    </div>
+                                    <div class="navbar__basket__list__item__content__action">
+                                        <a href="#">
+                                            <i class="fa-solid fa-trash-can"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="navbar__basket__list__item__footer">
+                                    <div class="navbar__basket__list__item__footer__price">2,500,000 تومان</div>
+                                    <div class="navbar__basket__list__item__footer__quantity">
+                                        <a href="#" class="navbar__basket__list__item__footer__quantity__plus">+</a>
+                                        <span> 3</span>
+                                        <a href="#" class="navbar__basket__list__item__footer__quantity__minus">-</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="navbar__basket__list__item">
+                                <div class="navbar__basket__list__item__content">
+                                    <div class="navbar__basket__list__item__content__pic">
+                                        <a href="#">
+                                            <img src="images/tmp/basket_1.jpg" alt="Shopping item" />
+                                        </a>
+                                    </div>
+                                    <div class="navbar__basket__list__item__content__detail">
+                                        <a href="#"> لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ </a>
+                                    </div>
+                                    <div class="navbar__basket__list__item__content__action">
+                                        <a href="#">
+                                            <i class="fa-solid fa-trash-can"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="navbar__basket__list__item__footer">
+                                    <div class="navbar__basket__list__item__footer__price">2,500,000 تومان</div>
+                                    <div class="navbar__basket__list__item__footer__quantity">
+                                        <a href="#" class="navbar__basket__list__item__footer__quantity__plus">+</a>
+                                        <span> 3</span>
+                                        <a href="#" class="navbar__basket__list__item__footer__quantity__minus">-</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="navbar__basket__list__total">
+                                مجموع سبد:
+                                <span>451,000 تومان</span>
+                            </div>
+                            <div class="navbar__basket__list__submit">
+                                <a href="#"> ادامه فرآیند خرید </a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </nav>
-
+        <!-- Sign in & Sign up Modal -->
         <div id="signin-modal" class="signin-modal">
             <div class="signin-modal__content">
                 <div class="signin-modal__container">

@@ -1198,7 +1198,7 @@ header {
   border: 0;
   padding: 1.4rem 1rem;
   font-size: 2rem;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   -webkit-box-shadow: 0.2rem 0.2rem 1rem #cccccc;
           box-shadow: 0.2rem 0.2rem 1rem #cccccc;
 }
@@ -1207,8 +1207,8 @@ header {
   position: absolute;
   background-color: transparent;
   border: 0;
-  left: .7rem;
-  top: .8rem;
+  left: 0.7rem;
+  top: 0.8rem;
   width: 5rem;
   height: 5rem;
   font-size: 3rem;
@@ -1230,13 +1230,6 @@ header {
   width: 100%;
 }
 
-.navbar__list__menu :nth-child(1) a {
-  background-color: #00798C;
-  color: #edf2f4ff;
-  border-top-left-radius: 0.7rem;
-  border-top-right-radius: 0.7rem;
-}
-
 .navbar__list__menu__link {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1251,12 +1244,27 @@ header {
   font-size: 1.5rem;
   padding: 0 1rem;
   color: #666666;
-  margin: 0 0 0 .3rem;
+  margin: 0 0 0 0.3rem;
 }
 
 .navbar__list__menu__link img {
   width: 2.7rem;
   height: 2.7rem;
+}
+
+.navbar__list__menu__link:hover {
+  color: #00798C;
+}
+
+.navbar__list__menu__link__categories > a {
+  background-color: #00798C;
+  color: #edf2f4ff;
+  border-top-left-radius: 0.7rem;
+  border-top-right-radius: 0.7rem;
+}
+
+.navbar__list__menu__link__categories > a:hover {
+  color: #ffffff;
 }
 
 .navbar__auth {
@@ -1274,6 +1282,7 @@ header {
       -ms-flex-align: center;
           align-items: center;
   margin: 1rem 0;
+  margin-right: auto;
 }
 
 .navbar__auth__user {
@@ -1294,7 +1303,7 @@ header {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  padding: 0 0 1rem 3rem;
+  padding: 0 0 1rem 2rem;
   cursor: pointer;
 }
 
@@ -1328,6 +1337,17 @@ header {
   font-size: 1.5rem;
 }
 
+.navbar__auth__user__arrow {
+  color: #555555;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.navbar__auth__user:hover .navbar__auth__user__arrow {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
 .navbar__auth__user__login {
   position: absolute;
   display: -webkit-box;
@@ -1344,11 +1364,11 @@ header {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  top: 5rem;
+  top: 100%;
   right: 0;
   background-color: white;
-  -webkit-transform-origin: top right;
-          transform-origin: top right;
+  -webkit-transform-origin: top;
+          transform-origin: top;
   border-bottom-left-radius: 2rem;
   border-bottom-right-radius: 2rem;
   padding: 2rem 0;
@@ -1356,6 +1376,9 @@ header {
           transform: scale(1, 0);
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
+  -webkit-box-shadow: 0.2rem 0.5rem 1rem #cccccc;
+          box-shadow: 0.2rem 0.5rem 1rem #cccccc;
+  z-index: 3;
 }
 
 .navbar__auth__user__login__form {
@@ -1395,20 +1418,203 @@ header {
           transform: scale(1, 1);
 }
 
-.navbar__auth__basket {
+.navbar__basket {
   position: relative;
+  padding-right: 2rem;
+  border-right: 0.3rem solid #cccccc;
+  margin: 1rem 0;
+  cursor: pointer;
 }
 
-.navbar__auth__basket__num {
+.navbar__basket__num {
   position: absolute;
   top: -0.3rem;
-  right: -0.7rem;
+  left: -0.6rem;
   background-color: #D1495B;
   color: #edf2f4ff;
   padding: 0.3rem 0.5rem 0;
   font-size: 1.3rem;
   border-radius: 1rem;
   font-weight: bold;
+}
+
+.navbar__basket__list {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 33rem;
+  height: auto;
+  background-color: white;
+  -webkit-transform-origin: top;
+          transform-origin: top;
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  -webkit-box-shadow: 0.2rem 0.5rem 1rem #cccccc;
+          box-shadow: 0.2rem 0.5rem 1rem #cccccc;
+  padding: 2rem 1rem;
+  z-index: 2;
+  cursor: default;
+}
+
+.navbar__basket__list__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 0 1rem;
+  border-bottom: 0.2rem solid #eeeeee;
+}
+
+.navbar__basket__list__item__content {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  margin: 0 0 1rem;
+  padding: 1rem 0;
+}
+
+.navbar__basket__list__item__content__pic img {
+  border-radius: 1rem;
+}
+
+.navbar__basket__list__item__content__detail {
+  padding: 0 1rem;
+}
+
+.navbar__basket__list__item__content__detail a {
+  font-family: "dana-light", "dana-medium", Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.4rem;
+  margin: 0 0 1rem;
+  color: #555555;
+}
+
+.navbar__basket__list__item__content__detail a:hover {
+  color: #00798C;
+}
+
+.navbar__basket__list__item__content__action {
+  margin-right: auto;
+}
+
+.navbar__basket__list__item__content__action a {
+  color: #555555;
+}
+
+.navbar__basket__list__item__content__action a:hover {
+  color: #00798C;
+}
+
+.navbar__basket__list__item__footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #555555;
+  width: 100%;
+}
+
+.navbar__basket__list__item__footer__quantity {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #eeeeee;
+  border-radius: .5rem;
+}
+
+.navbar__basket__list__item__footer__quantity__plus {
+  font-size: 3rem;
+  color: #4AC148;
+  padding: .6rem .5rem 0;
+}
+
+.navbar__basket__list__item__footer__quantity__minus {
+  font-size: 3rem;
+  color: #FA4D55;
+  padding: .6rem .5rem 0;
+}
+
+.navbar__basket__list__item__footer__quantity span {
+  margin: 0 .5rem;
+  font-size: 1.5rem;
+}
+
+.navbar__basket__list__total {
+  padding: 2rem 0;
+  font-size: 1.8rem;
+  color: #777777;
+}
+
+.navbar__basket__list__total span {
+  color: #00798C;
+}
+
+.navbar__basket__list__submit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.navbar__basket__list__submit a {
+  background-color: #0189FE;
+  color: #ffffff;
+  padding: 1rem;
+  width: 75%;
+  text-align: center;
+  border-radius: .7rem;
+}
+
+.navbar__basket__list__submit a:hover {
+  background-color: #00798C;
 }
 
 .categories__box {
@@ -1943,7 +2149,7 @@ header {
   /* Enable scroll if needed */
   background-color: black;
   /* Fallback color */
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.6);
   /* Black w/ opacity */
 }
 
@@ -2019,14 +2225,20 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #0189fe;
+  background-color: #0189FE;
   color: #ffffff;
   font-size: 1.7rem;
   padding: 1rem 1.5rem;
   outline: none;
   border: 0;
   border-radius: 0.7rem;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
   cursor: pointer;
+}
+
+.signin-modal__modal-page__btn:hover {
+  background-color: #00798C;
 }
 
 .signin-modal__modal-page__form input {
@@ -2063,7 +2275,7 @@ header {
 }
 
 .signin-modal__close-btn:hover {
-  color: #0189fe;
+  color: #0189FE;
 }
 
 /* Add Animation */

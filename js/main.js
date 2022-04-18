@@ -148,3 +148,13 @@ function openPage(pageName) {
     }
     document.getElementById(pageName).style.display = "flex";
 }
+
+// Toggle Show Button
+function toggleShow() {
+    var x = document.getElementById("basket-list");
+    if (x.style.display === "none") {
+        x.style.display = "flex";
+    } else {
+        x.style.display = "none";
+    }
+}

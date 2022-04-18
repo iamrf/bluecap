@@ -62,15 +62,15 @@
                 border: 0;
                 padding: 1.4rem 1rem;
                 font-size: 2rem;
-                border-radius: .5rem;
-                box-shadow: .2rem .2rem 1rem $gray-c;
+                border-radius: 0.5rem;
+                box-shadow: 0.2rem 0.2rem 1rem $gray-c;
             }
             & button {
                 position: absolute;
                 background-color: transparent;
                 border: 0;
-                left: .7rem;
-                top: .8rem;
+                left: 0.7rem;
+                top: 0.8rem;
                 width: 5rem;
                 height: 5rem;
                 font-size: 3rem;
@@ -84,14 +84,6 @@
             justify-content: space-between;
             align-items: center;
             width: 100%;
-            & :nth-child(1) {
-                & a {
-                    background-color: $manatee;
-                    color: $cultured;
-                    border-top-left-radius: 0.7rem;
-                    border-top-right-radius: 0.7rem;
-                }
-            }
             &__link {
                 display: flex;
                 justify-content: center;
@@ -100,10 +92,24 @@
                 font-size: 1.5rem;
                 padding: 0 1rem;
                 color: $gray-6;
-                margin: 0 0 0 .3rem;
+                margin: 0 0 0 0.3rem;
                 & img {
                     width: 2.7rem;
                     height: 2.7rem;
+                }
+                &:hover {
+                    color: $manatee;
+                }
+                &__categories {
+                    & > a {
+                        background-color: $manatee;
+                        color: $cultured;
+                        border-top-left-radius: 0.7rem;
+                        border-top-right-radius: 0.7rem;
+                    }
+                    & > a:hover {
+                        color: $white;
+                    }
                 }
             }
         }
@@ -115,6 +121,7 @@
         justify-content: space-between;
         align-items: center;
         margin: 1rem 0;
+        margin-right: auto;
         &__user {
             position: relative;
             display: flex;
@@ -122,7 +129,7 @@
             justify-content: space-between;
             align-items: center;
             flex-grow: 1;
-            padding: 0 0 1rem 3rem;
+            padding: 0 0 1rem 2rem;
             cursor: pointer;
             &__avatar {
             }
@@ -144,6 +151,15 @@
                     font-size: 1.5rem;
                 }
             }
+            &__arrow {
+                color: $gray-5;
+                transition: all 0.3s ease;
+            }
+            &:hover {
+                .navbar__auth__user__arrow {
+                    transform: rotate(180deg);
+                }
+            }
             &__login {
                 position: absolute;
                 display: flex;
@@ -151,15 +167,17 @@
                 justify-content: center;
                 align-items: center;
                 width: 100%;
-                top: 5rem;
+                top: 100%;
                 right: 0;
                 background-color: white;
-                transform-origin: top right;
+                transform-origin: top;
                 border-bottom-left-radius: 2rem;
                 border-bottom-right-radius: 2rem;
                 padding: 2rem 0;
                 transform: scale(1, 0);
                 transition: all 0.2s ease;
+                box-shadow: 0.2rem 0.5rem 1rem $gray-c;
+                z-index: 3;
                 &__form {
                     width: 100%;
                     position: relative;
@@ -184,18 +202,141 @@
                 transform: scale(1, 1);
             }
         }
-        &__basket {
-            position: relative;
-            &__num {
-                position: absolute;
-                top: -0.3rem;
-                right: -0.7rem;
-                background-color: $red-sun;
-                color: $cultured;
-                padding: 0.3rem 0.5rem 0;
-                font-size: 1.3rem;
-                border-radius: 1rem;
-                font-weight: bold;
+    }
+    &__basket {
+        position: relative;
+        padding-right: 2rem;
+        border-right: 0.3rem solid $gray-c;
+        margin: 1rem 0;
+        cursor: pointer;
+        &__num {
+            position: absolute;
+            top: -0.3rem;
+            left: -0.6rem;
+            background-color: $red-sun;
+            color: $cultured;
+            padding: 0.3rem 0.5rem 0;
+            font-size: 1.3rem;
+            border-radius: 1rem;
+            font-weight: bold;
+        }
+        &__list {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            display: none;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            width: 33rem;
+            height: auto;
+            background-color: white;
+            transform-origin: top;
+            border-bottom-left-radius: 2rem;
+            border-bottom-right-radius: 2rem;
+            box-shadow: 0.2rem 0.5rem 1rem $gray-c;
+            padding: 2rem 1rem;
+            z-index: 2;
+            cursor: default;
+            &__item {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: center;
+                padding: 0 0 1rem;
+                border-bottom: .2rem solid $gray-e;
+                &__content {
+                    position: relative;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: flex-start;
+                    align-items: center;
+                    width: 100%;
+                    margin: 0 0 1rem;
+                    padding: 1rem 0;
+                    &__pic {
+                        & img {
+                            border-radius: 1rem;
+                        }
+                    }
+                    &__detail {
+                        padding: 0 1rem;
+                        & a {
+                            font-family: $font-stack-light;
+                            font-size: 1.4rem;
+                            margin: 0 0 1rem;
+                            color: $gray-5;
+                            &:hover{
+                                color: $manatee;
+                            }
+                        }
+                    }
+                    &__action {
+                        margin-right: auto;
+                        & a {
+                            color: $gray-5;
+                            &:hover {
+                                color: $manatee;
+                            }
+                        }
+                    }
+                }
+                &__footer {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    color: $gray-5;
+                    width: 100%;
+                    &__price{
+
+                    }
+                    &__quantity{
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        background-color: $gray-e;
+                        border-radius: .5rem;
+                        &__plus{
+                            font-size: 3rem;
+                            color: #4AC148;
+                            padding: .6rem .5rem 0;
+                        }
+                        &__minus{
+                            font-size: 3rem;
+                            color: #FA4D55;
+                            padding: .6rem .5rem 0;
+                        }
+                        & span{
+                            margin: 0 .5rem;
+                            font-size: 1.5rem;
+                        }
+                    }
+                }
+            }
+            &__total{
+                padding: 2rem 0;
+                font-size: 1.8rem;
+                color: $gray-7;
+                & span{
+                color: $manatee;
+                }
+            }
+            &__submit{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                & a{
+                    background-color: $primary;
+                    color: $white;
+                    padding: 1rem;
+                    width: 75%;
+                    text-align: center;
+                    border-radius: .7rem;
+                    &:hover{
+                        background-color: $manatee;
+                    }
+                }
             }
         }
     }
