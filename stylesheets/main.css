@@ -2224,7 +2224,7 @@ header {
   margin: 2rem 0 0.5rem;
 }
 
-.signin-modal__modal-page__btn {
+.signin-modal__modal-page__primary-btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2246,8 +2246,34 @@ header {
   cursor: pointer;
 }
 
-.signin-modal__modal-page__btn:hover {
+.signin-modal__modal-page__primary-btn:hover {
   background-color: #00798C;
+}
+
+.signin-modal__modal-page__secondary-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: transparent;
+  color: #777777;
+  font-size: 1.7rem;
+  padding: 1rem 1.5rem;
+  outline: none;
+  border: 0;
+  border-radius: 0.7rem;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+  cursor: pointer;
+}
+
+.signin-modal__modal-page__secondary-btn:hover {
+  color: #00798C;
 }
 
 .signin-modal__modal-page__form input {
@@ -2264,12 +2290,51 @@ header {
   width: 1.5rem !important;
   height: 1.5rem !important;
   color: #777777;
+  cursor: pointer;
 }
 
 .signin-modal__modal-page__form label {
   color: #777777;
   font-family: "dana-light", "dana-medium", Verdana, Geneva, Tahoma, sans-serif;
   font-size: 1.2rem;
+  margin-right: .5rem;
+  cursor: pointer;
+}
+
+.signin-modal__modal-page__form__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.signin-modal__modal-page__form__container > a {
+  font-size: 1.2rem;
+  color: #0189FE;
+  margin-right: auto;
+}
+
+.signin-modal__modal-page__form__container > a:hover {
+  color: #00798C;
+}
+
+.signin-modal__modal-page__form__footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
 }
 
 .signin-modal__close-btn {

@@ -44,7 +44,7 @@
             font-family: $font-stack-light;
             margin: 2rem 0 0.5rem;
         }
-        &__btn {
+        &__primary-btn {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -61,6 +61,23 @@
                 background-color: $manatee;
             }
         }
+        &__secondary-btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: transparent;
+            color: $gray-7;
+            font-size: 1.7rem;
+            padding: 1rem 1.5rem;
+            outline: none;
+            border: 0;
+            border-radius: 0.7rem;
+            transition: all .2s ease;
+            cursor: pointer;
+            &:hover{
+                color: $manatee;
+            }
+        }
         &__form {
             & input {
                 outline: none;
@@ -75,11 +92,34 @@
                 width: 1.5rem !important;
                 height: 1.5rem !important;
                 color: $gray-7;
+                cursor: pointer;
             }
             & label {
                 color: $gray-7;
                 font-family: $font-stack-light;
                 font-size: 1.2rem;
+                margin-right: .5rem;
+                cursor: pointer;
+            }
+            &__container{
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                width: 100%;
+                & > a{
+                    font-size: 1.2rem;
+                    color: $primary;
+                    margin-right: auto;
+                    &:hover{
+                        color: $manatee;
+                    }
+                }
+            }
+            &__footer{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
             }
         }
     }
