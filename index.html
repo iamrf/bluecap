@@ -13,398 +13,435 @@
     <body>
         <!-- Top Navbar -->
         <nav>
-            <div class="container">
-                <div class="navbar">
-                    <div class="navbar__logo">
-                        <div class="navbar__logo__pic">
-                            <img src="images/nav/logotype.png" class="navbar__logo__pic__logotype" alt="Logotype" />
-                            <img src="images/nav/logo.png" class="navbar__logo__pic__logo" alt="Logo" />
-                        </div>
-                        <div class="navbar__logo__description mt-5">بزرگترین فروشگاه امنیت خودرو</div>
-                    </div>
-                    <div class="navbar__list">
-                        <form class="navbar__list__search">
-                            <input type="text" id="nav-search" name="nav-search" placeholder="محصول مورد نظر را جستجو کنید" />
-                            <button><i class="fa-solid fa-magnifying-glass"></i></button>
-                        </form>
-                        <ul class="navbar__list__menu">
-                            <li class="navbar__list__menu__link__categories">
-                                <a href="#" class="navbar__list__menu__link"> <img src="images/nav/burger.svg" alt="" />&nbsp; دسته بندی محصولات </a>
+            <div class="mobile-wrap">
+                <div class="container">
+                    <input type="checkbox" name="burgericon" id="burgericon" />
+                    <label for="burgericon"></label>
+                    <span class="mobile-wrap__logo">
+                        <img src="images/nav/logo.png" alt="" />
+                    </span>
+                    <span class="mobile-wrap__basket">
+                        <i class="fa-solid fa-basket-shopping"></i>
+                    </span>
 
-                                <div class="megamenu">
-                                    <ul class="megamenu__item">
-                                        <li>
-                                            <span class="megamenu__cat"> سوییچ خودرو </span>
-                                            <i class="fa-solid fa-angle-down"></i>
+                    <div class="navbar">
+                        <div class="navbar__logo">
+                            <div class="navbar__logo__pic">
+                                <img src="images/nav/logotype.png" class="navbar__logo__pic__logotype" alt="Logotype" />
+                                <img src="images/nav/logo.png" class="navbar__logo__pic__logo" alt="Logo" />
+                            </div>
+                            <div class="navbar__logo__description mt-5">بزرگترین فروشگاه امنیت خودرو</div>
+                        </div>
+                        <div class="navbar__list">
+                            <form class="navbar__list__search">
+                                <input type="text" id="nav-search" name="nav-search" placeholder="محصول مورد نظر را جستجو کنید" />
+                                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                            </form>
+                            <ul class="navbar__list__menu">
+                                <li class="navbar__list__menu__link__categories">
+                                    <input type="checkbox" name="nav-categories" id="nav-categories" />
+                                    <label for="nav-categories">
+                                        <span class="navbar__list__menu__link"> <img src="images/nav/burger.svg" alt="" />&nbsp; دسته بندی محصولات </span>
+                                    </label>
 
-                                            <div class="megamenu__sub">
-                                                <div class="megamenu__sub__container">
-                                                    <div class="megamenu__sub__container__header">
-                                                        <h4>سوییچ خودرو</h4>
-                                                        <a href="#">مشاهده همه محصولات &nbsp;<i class="fa-solid fa-angle-left"></i> </a>
-                                                    </div>
-                                                    <div class="megamenu__sub__container__body">
-                                                        <div class="megamenu__sub__container__body__content">
-                                                            <h5>دسته بندی محصول</h5>
-                                                            <a href="#">عنوان محصول</a>
-                                                            <a href="#">عنوان محصول</a>
-                                                            <a href="#">عنوان محصول</a>
-                                                            <a href="#">عنوان محصول</a>
-                                                            <a href="#">عنوان محصول</a>
-                                                            <a href="#">عنوان محصول</a>
+                                    <div class="megamenu">
+                                        <ul class="megamenu__item">
+                                            <li>
+                                                <input type="checkbox" name="megamenu-cat" id="megamenu-one" />
+                                                <label for="megamenu-one" class="megamenu__cat">
+                                                    <span> سوییچ خودرو </span>
+                                                    <i class="fa-solid fa-angle-down"></i>
+                                                </label>
+
+                                                <div class="megamenu__sub">
+                                                    <div class="megamenu__sub__container">
+                                                        <div class="megamenu__sub__container__header">
+                                                            <h4>سوییچ خودرو</h4>
+                                                            <a href="#">مشاهده همه &nbsp;<i class="fa-solid fa-angle-left"></i> </a>
                                                         </div>
-                                                        <div class="megamenu__sub__container__body__content">
-                                                            <h5>دسته بندی محصول</h5>
-                                                            <a href="#">عنوان محصول</a>
-                                                            <a href="#">عنوان محصول</a>
-                                                            <a href="#">عنوان محصول</a>
-                                                            <a href="#">عنوان محصول</a>
-                                                            <a href="#">عنوان محصول</a>
-                                                            <a href="#">عنوان محصول</a>
-                                                        </div>
-                                                        <div class="megamenu__sub__container__body__content">
-                                                            <h5>دسته بندی محصول</h5>
-                                                            <a href="#">عنوان محصول</a>
-                                                            <a href="#">عنوان محصول</a>
-                                                            <a href="#">عنوان محصول</a>
-                                                            <a href="#">عنوان محصول</a>
-                                                            <a href="#">عنوان محصول</a>
-                                                            <a href="#">عنوان محصول</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <span class="megamenu__cat"> ردیاب خودرو </span>
-                                            <i class="fa-solid fa-angle-down"></i>
-                                            <div class="megamenu__sub">
-                                                <div class="megamenu__sub__container">
-                                                    <div class="megamenu__sub__container__header">
-                                                        <h4>ردیاب خودرو</h4>
-                                                        <a href="#">مشاهده همه محصولات &nbsp;<i class="fa-solid fa-angle-left"></i> </a>
-                                                    </div>
-                                                    <div class="megamenu__sub__container__body">
-                                                        <div class="megamenu__sub__container__body__content">
-                                                            <h5>دسته بندی محصول</h5>
-                                                            <a href="#">عنوان محصول</a>
-                                                            <a href="#">عنوان محصول</a>
-                                                            <a href="#">عنوان محصول</a>
-                                                            <a href="#">عنوان محصول</a>
-                                                            <a href="#">عنوان محصول</a>
-                                                            <a href="#">عنوان محصول</a>
-                                                        </div>
-                                                        <div class="megamenu__sub__container__body__content">
-                                                            <h5>دسته بندی محصول</h5>
-                                                            <a href="#">عنوان محصول</a>
-                                                            <a href="#">عنوان محصول</a>
-                                                            <a href="#">عنوان محصول</a>
-                                                            <a href="#">عنوان محصول</a>
-                                                            <a href="#">عنوان محصول</a>
-                                                            <a href="#">عنوان محصول</a>
-                                                        </div>
-                                                        <div class="megamenu__sub__container__body__content">
-                                                            <h5>دسته بندی محصول</h5>
-                                                            <a href="#">عنوان محصول</a>
-                                                            <a href="#">عنوان محصول</a>
-                                                            <a href="#">عنوان محصول</a>
-                                                            <a href="#">عنوان محصول</a>
-                                                            <a href="#">عنوان محصول</a>
-                                                            <a href="#">عنوان محصول</a>
+                                                        <div class="megamenu__sub__container__body">
+                                                            <div class="megamenu__sub__container__body__content">
+                                                                <h5>دسته بندی محصول</h5>
+                                                                <a href="#">عنوان محصول</a>
+                                                                <a href="#">عنوان محصول</a>
+                                                                <a href="#">عنوان محصول</a>
+                                                                <a href="#">عنوان محصول</a>
+                                                                <a href="#">عنوان محصول</a>
+                                                                <a href="#">عنوان محصول</a>
+                                                            </div>
+                                                            <div class="megamenu__sub__container__body__content">
+                                                                <h5>دسته بندی محصول</h5>
+                                                                <a href="#">عنوان محصول</a>
+                                                                <a href="#">عنوان محصول</a>
+                                                                <a href="#">عنوان محصول</a>
+                                                                <a href="#">عنوان محصول</a>
+                                                                <a href="#">عنوان محصول</a>
+                                                                <a href="#">عنوان محصول</a>
+                                                            </div>
+                                                            <div class="megamenu__sub__container__body__content">
+                                                                <h5>دسته بندی محصول</h5>
+                                                                <a href="#">عنوان محصول</a>
+                                                                <a href="#">عنوان محصول</a>
+                                                                <a href="#">عنوان محصول</a>
+                                                                <a href="#">عنوان محصول</a>
+                                                                <a href="#">عنوان محصول</a>
+                                                                <a href="#">عنوان محصول</a>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <span class="megamenu__cat"> انواع کلید </span>
-                                            <i class="fa-solid fa-angle-down"></i>
-                                            <div class="megamenu__sub">
-                                                <div class="megamenu__sub__container">
-                                                    <div class="megamenu__sub__container__header">
-                                                        <h4>انواع کلید</h4>
-                                                        <a href="#">مشاهده همه محصولات &nbsp;<i class="fa-solid fa-angle-left"></i> </a>
-                                                    </div>
-                                                    <div class="megamenu__sub__container__body">
-                                                        <div class="megamenu__sub__container__body__content">
-                                                            <h5>دسته بندی محصول</h5>
-                                                            <a href="#">عنوان محصول</a>
-                                                            <a href="#">عنوان محصول</a>
-                                                            <a href="#">عنوان محصول</a>
-                                                            <a href="#">عنوان محصول</a>
-                                                            <a href="#">عنوان محصول</a>
-                                                            <a href="#">عنوان محصول</a>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" name="megamenu-cat" id="megamenu-two" />
+                                                <label for="megamenu-two" class="megamenu__cat">
+                                                    <span> ردیاب خودرو </span>
+                                                    <i class="fa-solid fa-angle-down"></i>
+                                                </label>
+                                                <div class="megamenu__sub">
+                                                    <div class="megamenu__sub__container">
+                                                        <div class="megamenu__sub__container__header">
+                                                            <h4>ردیاب خودرو</h4>
+                                                            <a href="#">مشاهده همه &nbsp;<i class="fa-solid fa-angle-left"></i> </a>
                                                         </div>
-                                                        <div class="megamenu__sub__container__body__content">
-                                                            <h5>دسته بندی محصول</h5>
-                                                            <a href="#">عنوان محصول</a>
-                                                            <a href="#">عنوان محصول</a>
-                                                            <a href="#">عنوان محصول</a>
-                                                            <a href="#">عنوان محصول</a>
-                                                            <a href="#">عنوان محصول</a>
-                                                            <a href="#">عنوان محصول</a>
-                                                        </div>
-                                                        <div class="megamenu__sub__container__body__content">
-                                                            <h5>دسته بندی محصول</h5>
-                                                            <a href="#">عنوان محصول</a>
-                                                            <a href="#">عنوان محصول</a>
-                                                            <a href="#">عنوان محصول</a>
-                                                            <a href="#">عنوان محصول</a>
-                                                            <a href="#">عنوان محصول</a>
-                                                            <a href="#">عنوان محصول</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <span class="megamenu__cat"> محصولات امنیتی </span>
-                                            <i class="fa-solid fa-angle-down"></i>
-                                            <div class="megamenu__sub">
-                                                <div class="megamenu__sub__container">
-                                                    <div class="megamenu__sub__container__header">
-                                                        <h4>محصولات امنیتی</h4>
-                                                        <a href="#">مشاهده همه محصولات &nbsp;<i class="fa-solid fa-angle-left"></i> </a>
-                                                    </div>
-                                                    <div class="megamenu__sub__container__body">
-                                                        <div class="megamenu__sub__container__body__content">
-                                                            <h5>دسته بندی محصول</h5>
-                                                            <a href="#">عنوان محصول</a>
-                                                            <a href="#">عنوان محصول</a>
-                                                            <a href="#">عنوان محصول</a>
-                                                            <a href="#">عنوان محصول</a>
-                                                            <a href="#">عنوان محصول</a>
-                                                            <a href="#">عنوان محصول</a>
-                                                        </div>
-                                                        <div class="megamenu__sub__container__body__content">
-                                                            <h5>دسته بندی محصول</h5>
-                                                            <a href="#">عنوان محصول</a>
-                                                            <a href="#">عنوان محصول</a>
-                                                            <a href="#">عنوان محصول</a>
-                                                            <a href="#">عنوان محصول</a>
-                                                            <a href="#">عنوان محصول</a>
-                                                            <a href="#">عنوان محصول</a>
-                                                        </div>
-                                                        <div class="megamenu__sub__container__body__content">
-                                                            <h5>دسته بندی محصول</h5>
-                                                            <a href="#">عنوان محصول</a>
-                                                            <a href="#">عنوان محصول</a>
-                                                            <a href="#">عنوان محصول</a>
-                                                            <a href="#">عنوان محصول</a>
-                                                            <a href="#">عنوان محصول</a>
-                                                            <a href="#">عنوان محصول</a>
+                                                        <div class="megamenu__sub__container__body">
+                                                            <div class="megamenu__sub__container__body__content">
+                                                                <h5>دسته بندی محصول</h5>
+                                                                <a href="#">عنوان محصول</a>
+                                                                <a href="#">عنوان محصول</a>
+                                                                <a href="#">عنوان محصول</a>
+                                                                <a href="#">عنوان محصول</a>
+                                                                <a href="#">عنوان محصول</a>
+                                                                <a href="#">عنوان محصول</a>
+                                                            </div>
+                                                            <div class="megamenu__sub__container__body__content">
+                                                                <h5>دسته بندی محصول</h5>
+                                                                <a href="#">عنوان محصول</a>
+                                                                <a href="#">عنوان محصول</a>
+                                                                <a href="#">عنوان محصول</a>
+                                                                <a href="#">عنوان محصول</a>
+                                                                <a href="#">عنوان محصول</a>
+                                                                <a href="#">عنوان محصول</a>
+                                                            </div>
+                                                            <div class="megamenu__sub__container__body__content">
+                                                                <h5>دسته بندی محصول</h5>
+                                                                <a href="#">عنوان محصول</a>
+                                                                <a href="#">عنوان محصول</a>
+                                                                <a href="#">عنوان محصول</a>
+                                                                <a href="#">عنوان محصول</a>
+                                                                <a href="#">عنوان محصول</a>
+                                                                <a href="#">عنوان محصول</a>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <span class="megamenu__cat"> حفاظت اماکن </span>
-                                            <i class="fa-solid fa-angle-down"></i>
-                                            <div class="megamenu__sub">
-                                                <div class="megamenu__sub__container">
-                                                    <div class="megamenu__sub__container__header">
-                                                        <h4>حفاظت اماکن</h4>
-                                                        <a href="#">مشاهده همه محصولات &nbsp;<i class="fa-solid fa-angle-left"></i> </a>
-                                                    </div>
-                                                    <div class="megamenu__sub__container__body">
-                                                        <div class="megamenu__sub__container__body__content">
-                                                            <h5>دسته بندی محصول</h5>
-                                                            <a href="#">عنوان محصول</a>
-                                                            <a href="#">عنوان محصول</a>
-                                                            <a href="#">عنوان محصول</a>
-                                                            <a href="#">عنوان محصول</a>
-                                                            <a href="#">عنوان محصول</a>
-                                                            <a href="#">عنوان محصول</a>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" name="megamenu-cat" id="megamenu-three" />
+                                                <label for="megamenu-three" class="megamenu__cat">
+                                                    <span> انواع کلید </span>
+                                                    <i class="fa-solid fa-angle-down"></i>
+                                                </label>
+                                                <div class="megamenu__sub">
+                                                    <div class="megamenu__sub__container">
+                                                        <div class="megamenu__sub__container__header">
+                                                            <h4>انواع کلید</h4>
+                                                            <a href="#">مشاهده همه &nbsp;<i class="fa-solid fa-angle-left"></i> </a>
                                                         </div>
-                                                        <div class="megamenu__sub__container__body__content">
-                                                            <h5>دسته بندی محصول</h5>
-                                                            <a href="#">عنوان محصول</a>
-                                                            <a href="#">عنوان محصول</a>
-                                                            <a href="#">عنوان محصول</a>
-                                                            <a href="#">عنوان محصول</a>
-                                                            <a href="#">عنوان محصول</a>
-                                                            <a href="#">عنوان محصول</a>
-                                                        </div>
-                                                        <div class="megamenu__sub__container__body__content">
-                                                            <h5>دسته بندی محصول</h5>
-                                                            <a href="#">عنوان محصول</a>
-                                                            <a href="#">عنوان محصول</a>
-                                                            <a href="#">عنوان محصول</a>
-                                                            <a href="#">عنوان محصول</a>
-                                                            <a href="#">عنوان محصول</a>
-                                                            <a href="#">عنوان محصول</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <span class="megamenu__cat"> انواع GPS </span>
-                                            <i class="fa-solid fa-angle-down"></i>
-                                            <div class="megamenu__sub">
-                                                <div class="megamenu__sub__container">
-                                                    <div class="megamenu__sub__container__header">
-                                                        <h4>انواع GPS</h4>
-                                                        <a href="#">مشاهده همه محصولات &nbsp;<i class="fa-solid fa-angle-left"></i> </a>
-                                                    </div>
-                                                    <div class="megamenu__sub__container__body">
-                                                        <div class="megamenu__sub__container__body__content">
-                                                            <h5>دسته بندی محصول</h5>
-                                                            <a href="#">عنوان محصول</a>
-                                                            <a href="#">عنوان محصول</a>
-                                                            <a href="#">عنوان محصول</a>
-                                                            <a href="#">عنوان محصول</a>
-                                                            <a href="#">عنوان محصول</a>
-                                                            <a href="#">عنوان محصول</a>
-                                                        </div>
-                                                        <div class="megamenu__sub__container__body__content">
-                                                            <h5>دسته بندی محصول</h5>
-                                                            <a href="#">عنوان محصول</a>
-                                                            <a href="#">عنوان محصول</a>
-                                                            <a href="#">عنوان محصول</a>
-                                                            <a href="#">عنوان محصول</a>
-                                                            <a href="#">عنوان محصول</a>
-                                                            <a href="#">عنوان محصول</a>
-                                                        </div>
-                                                        <div class="megamenu__sub__container__body__content">
-                                                            <h5>دسته بندی محصول</h5>
-                                                            <a href="#">عنوان محصول</a>
-                                                            <a href="#">عنوان محصول</a>
-                                                            <a href="#">عنوان محصول</a>
-                                                            <a href="#">عنوان محصول</a>
-                                                            <a href="#">عنوان محصول</a>
-                                                            <a href="#">عنوان محصول</a>
+                                                        <div class="megamenu__sub__container__body">
+                                                            <div class="megamenu__sub__container__body__content">
+                                                                <h5>دسته بندی محصول</h5>
+                                                                <a href="#">عنوان محصول</a>
+                                                                <a href="#">عنوان محصول</a>
+                                                                <a href="#">عنوان محصول</a>
+                                                                <a href="#">عنوان محصول</a>
+                                                                <a href="#">عنوان محصول</a>
+                                                                <a href="#">عنوان محصول</a>
+                                                            </div>
+                                                            <div class="megamenu__sub__container__body__content">
+                                                                <h5>دسته بندی محصول</h5>
+                                                                <a href="#">عنوان محصول</a>
+                                                                <a href="#">عنوان محصول</a>
+                                                                <a href="#">عنوان محصول</a>
+                                                                <a href="#">عنوان محصول</a>
+                                                                <a href="#">عنوان محصول</a>
+                                                                <a href="#">عنوان محصول</a>
+                                                            </div>
+                                                            <div class="megamenu__sub__container__body__content">
+                                                                <h5>دسته بندی محصول</h5>
+                                                                <a href="#">عنوان محصول</a>
+                                                                <a href="#">عنوان محصول</a>
+                                                                <a href="#">عنوان محصول</a>
+                                                                <a href="#">عنوان محصول</a>
+                                                                <a href="#">عنوان محصول</a>
+                                                                <a href="#">عنوان محصول</a>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li>
-                                <a href="#" class="navbar__list__menu__link"> پرفروش ترین ها </a>
-                            </li>
-                            <li>
-                                <a href="#" class="navbar__list__menu__link"> وبلاگ </a>
-                            </li>
-                            <li>
-                                <a href="#" class="navbar__list__menu__link"> راهنما </a>
-                            </li>
-                            <li>
-                                <a href="#" class="navbar__list__menu__link"> ارتباط با ما </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="navbar__auth">
-                        <div class="navbar__auth__user">
-                            <div class="navbar__auth__user__avatar">
-                                <img src="images/nav/user.svg" alt="user avatar" />
-                            </div>
-                            <div class="navbar__auth__user__text">
-                                <span class="navbar__auth__user__text__welcome"> خوش آمدید </span>
-                                <span class="navbar__auth__user__text__name"> کاربر مهمان </span>
-                            </div>
-                            <div class="navbar__auth__user__arrow">
-                                <i class="fa-solid fa-angle-down"></i>
-                            </div>
-                            <div class="navbar__auth__user__login">
-                                <div class="navbar__auth__user__login__form">
-                                    <a href="#" class="navbar__auth__user__login__form__link" onclick="document.getElementById('signin-modal').style.display='block'">
-                                        <i class="fa-solid fa-user"></i>&nbsp; ورود کاربر
-                                    </a>
-                                    <a href="#" class="navbar__auth__user__login__form__link" onclick="document.getElementById('signin-modal').style.display='block'"> <i class="fa-solid fa-user-plus"></i>&nbsp; ثبت نام </a>
-                                    <a href="#" class="navbar__auth__user__login__form__link"> <i class="fa-solid fa-barcode"></i>&nbsp; پیگیری کالا </a>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" name="megamenu-cat" id="megamenu-four" />
+                                                <label for="megamenu-four" class="megamenu__cat">
+                                                    <span> محصولات امنیتی </span>
+                                                    <i class="fa-solid fa-angle-down"></i>
+                                                </label>
+                                                <div class="megamenu__sub">
+                                                    <div class="megamenu__sub__container">
+                                                        <div class="megamenu__sub__container__header">
+                                                            <h4>محصولات امنیتی</h4>
+                                                            <a href="#">مشاهده همه &nbsp;<i class="fa-solid fa-angle-left"></i> </a>
+                                                        </div>
+                                                        <div class="megamenu__sub__container__body">
+                                                            <div class="megamenu__sub__container__body__content">
+                                                                <h5>دسته بندی محصول</h5>
+                                                                <a href="#">عنوان محصول</a>
+                                                                <a href="#">عنوان محصول</a>
+                                                                <a href="#">عنوان محصول</a>
+                                                                <a href="#">عنوان محصول</a>
+                                                                <a href="#">عنوان محصول</a>
+                                                                <a href="#">عنوان محصول</a>
+                                                            </div>
+                                                            <div class="megamenu__sub__container__body__content">
+                                                                <h5>دسته بندی محصول</h5>
+                                                                <a href="#">عنوان محصول</a>
+                                                                <a href="#">عنوان محصول</a>
+                                                                <a href="#">عنوان محصول</a>
+                                                                <a href="#">عنوان محصول</a>
+                                                                <a href="#">عنوان محصول</a>
+                                                                <a href="#">عنوان محصول</a>
+                                                            </div>
+                                                            <div class="megamenu__sub__container__body__content">
+                                                                <h5>دسته بندی محصول</h5>
+                                                                <a href="#">عنوان محصول</a>
+                                                                <a href="#">عنوان محصول</a>
+                                                                <a href="#">عنوان محصول</a>
+                                                                <a href="#">عنوان محصول</a>
+                                                                <a href="#">عنوان محصول</a>
+                                                                <a href="#">عنوان محصول</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" name="megamenu-cat" id="megamenu-five" />
+                                                <label for="megamenu-five" class="megamenu__cat">
+                                                    <span> حفاظت اماکن </span>
+                                                    <i class="fa-solid fa-angle-down"></i>
+                                                </label>
+                                                <div class="megamenu__sub">
+                                                    <div class="megamenu__sub__container">
+                                                        <div class="megamenu__sub__container__header">
+                                                            <h4>حفاظت اماکن</h4>
+                                                            <a href="#">مشاهده همه &nbsp;<i class="fa-solid fa-angle-left"></i> </a>
+                                                        </div>
+                                                        <div class="megamenu__sub__container__body">
+                                                            <div class="megamenu__sub__container__body__content">
+                                                                <h5>دسته بندی محصول</h5>
+                                                                <a href="#">عنوان محصول</a>
+                                                                <a href="#">عنوان محصول</a>
+                                                                <a href="#">عنوان محصول</a>
+                                                                <a href="#">عنوان محصول</a>
+                                                                <a href="#">عنوان محصول</a>
+                                                                <a href="#">عنوان محصول</a>
+                                                            </div>
+                                                            <div class="megamenu__sub__container__body__content">
+                                                                <h5>دسته بندی محصول</h5>
+                                                                <a href="#">عنوان محصول</a>
+                                                                <a href="#">عنوان محصول</a>
+                                                                <a href="#">عنوان محصول</a>
+                                                                <a href="#">عنوان محصول</a>
+                                                                <a href="#">عنوان محصول</a>
+                                                                <a href="#">عنوان محصول</a>
+                                                            </div>
+                                                            <div class="megamenu__sub__container__body__content">
+                                                                <h5>دسته بندی محصول</h5>
+                                                                <a href="#">عنوان محصول</a>
+                                                                <a href="#">عنوان محصول</a>
+                                                                <a href="#">عنوان محصول</a>
+                                                                <a href="#">عنوان محصول</a>
+                                                                <a href="#">عنوان محصول</a>
+                                                                <a href="#">عنوان محصول</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" name="megamenu-cat" id="megamenu-six" />
+                                                <label for="megamenu-six" class="megamenu__cat">
+                                                    <span> انواع GPS </span>
+                                                    <i class="fa-solid fa-angle-down"></i>
+                                                </label>
+                                                <div class="megamenu__sub">
+                                                    <div class="megamenu__sub__container">
+                                                        <div class="megamenu__sub__container__header">
+                                                            <h4>انواع GPS</h4>
+                                                            <a href="#">مشاهده همه &nbsp;<i class="fa-solid fa-angle-left"></i> </a>
+                                                        </div>
+                                                        <div class="megamenu__sub__container__body">
+                                                            <div class="megamenu__sub__container__body__content">
+                                                                <h5>دسته بندی محصول</h5>
+                                                                <a href="#">عنوان محصول</a>
+                                                                <a href="#">عنوان محصول</a>
+                                                                <a href="#">عنوان محصول</a>
+                                                                <a href="#">عنوان محصول</a>
+                                                                <a href="#">عنوان محصول</a>
+                                                                <a href="#">عنوان محصول</a>
+                                                            </div>
+                                                            <div class="megamenu__sub__container__body__content">
+                                                                <h5>دسته بندی محصول</h5>
+                                                                <a href="#">عنوان محصول</a>
+                                                                <a href="#">عنوان محصول</a>
+                                                                <a href="#">عنوان محصول</a>
+                                                                <a href="#">عنوان محصول</a>
+                                                                <a href="#">عنوان محصول</a>
+                                                                <a href="#">عنوان محصول</a>
+                                                            </div>
+                                                            <div class="megamenu__sub__container__body__content">
+                                                                <h5>دسته بندی محصول</h5>
+                                                                <a href="#">عنوان محصول</a>
+                                                                <a href="#">عنوان محصول</a>
+                                                                <a href="#">عنوان محصول</a>
+                                                                <a href="#">عنوان محصول</a>
+                                                                <a href="#">عنوان محصول</a>
+                                                                <a href="#">عنوان محصول</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#" class="navbar__list__menu__link"> پرفروش ترین ها </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="navbar__list__menu__link"> وبلاگ </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="navbar__list__menu__link"> راهنما </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="navbar__list__menu__link"> ارتباط با ما </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="navbar__auth">
+                            <div class="navbar__auth__user">
+                                <input type="checkbox" name="userbox" id="userbox" />
+                                <label for="userbox">
+                                    <span class="navbar__auth__user__avatar">
+                                        <img src="images/nav/user.svg" alt="user avatar" />
+                                    </span>
+                                    <span class="navbar__auth__user__text">
+                                        <span class="navbar__auth__user__text__welcome"> خوش آمدید </span>
+                                        <span class="navbar__auth__user__text__name"> کاربر مهمان </span>
+                                    </span>
+                                    <span class="navbar__auth__user__arrow">
+                                        <i class="fa-solid fa-caret-down"></i>
+                                    </span>
+                                </label>
+                                <div class="navbar__auth__user__login">
+                                    <div class="navbar__auth__user__login__form">
+                                        <a href="#" class="navbar__auth__user__login__form__link" onclick="document.getElementById('signin-modal').style.display='block'">
+                                            <i class="fa-solid fa-user"></i>&nbsp; ورود کاربر
+                                        </a>
+                                        <a href="#" class="navbar__auth__user__login__form__link" onclick="document.getElementById('signin-modal').style.display='block'">
+                                            <i class="fa-solid fa-user-plus"></i>&nbsp; ثبت نام
+                                        </a>
+                                        <a href="#" class="navbar__auth__user__login__form__link"> <i class="fa-solid fa-barcode"></i>&nbsp; پیگیری کالا </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="navbar__basket" id="basket" onclick="toggleShow()">
-                        <img src="images/nav/basket.svg" alt="shopping basket" />
-                        <span class="navbar__basket__num">0</span>
-                        <div class="navbar__basket__list" id="basket-list">
-                            <div class="navbar__basket__list__item">
-                                <div class="navbar__basket__list__item__content">
-                                    <div class="navbar__basket__list__item__content__pic">
-                                        <a href="#">
-                                            <img src="images/tmp/basket_1.jpg" alt="Shopping item" />
-                                        </a>
+                        <div class="navbar__basket" id="basket" onclick="toggleShow()">
+                            <img src="images/nav/basket.svg" alt="shopping basket" />
+                            <span class="navbar__basket__num">0</span>
+                            <div class="navbar__basket__list" id="basket-list">
+                                <div class="navbar__basket__list__item">
+                                    <div class="navbar__basket__list__item__content">
+                                        <div class="navbar__basket__list__item__content__pic">
+                                            <a href="#">
+                                                <img src="images/tmp/basket_1.jpg" alt="Shopping item" />
+                                            </a>
+                                        </div>
+                                        <div class="navbar__basket__list__item__content__detail">
+                                            <a href="#"> لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ </a>
+                                        </div>
+                                        <div class="navbar__basket__list__item__content__action">
+                                            <a href="#">
+                                                <i class="fa-solid fa-trash-can"></i>
+                                            </a>
+                                        </div>
                                     </div>
-                                    <div class="navbar__basket__list__item__content__detail">
-                                        <a href="#"> لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ </a>
-                                    </div>
-                                    <div class="navbar__basket__list__item__content__action">
-                                        <a href="#">
-                                            <i class="fa-solid fa-trash-can"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="navbar__basket__list__item__footer">
-                                    <div class="navbar__basket__list__item__footer__price">2,500,000 تومان</div>
-                                    <div class="navbar__basket__list__item__footer__quantity">
-                                        <a href="#" class="navbar__basket__list__item__footer__quantity__plus">+</a>
-                                        <span> 3</span>
-                                        <a href="#" class="navbar__basket__list__item__footer__quantity__minus">-</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="navbar__basket__list__item">
-                                <div class="navbar__basket__list__item__content">
-                                    <div class="navbar__basket__list__item__content__pic">
-                                        <a href="#">
-                                            <img src="images/tmp/basket_1.jpg" alt="Shopping item" />
-                                        </a>
-                                    </div>
-                                    <div class="navbar__basket__list__item__content__detail">
-                                        <a href="#"> لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ </a>
-                                    </div>
-                                    <div class="navbar__basket__list__item__content__action">
-                                        <a href="#">
-                                            <i class="fa-solid fa-trash-can"></i>
-                                        </a>
+                                    <div class="navbar__basket__list__item__footer">
+                                        <div class="navbar__basket__list__item__footer__price">2,500,000 تومان</div>
+                                        <div class="navbar__basket__list__item__footer__quantity">
+                                            <a href="#" class="navbar__basket__list__item__footer__quantity__plus">+</a>
+                                            <span> 3</span>
+                                            <a href="#" class="navbar__basket__list__item__footer__quantity__minus">-</a>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="navbar__basket__list__item__footer">
-                                    <div class="navbar__basket__list__item__footer__price">2,500,000 تومان</div>
-                                    <div class="navbar__basket__list__item__footer__quantity">
-                                        <a href="#" class="navbar__basket__list__item__footer__quantity__plus">+</a>
-                                        <span> 3</span>
-                                        <a href="#" class="navbar__basket__list__item__footer__quantity__minus">-</a>
+                                <div class="navbar__basket__list__item">
+                                    <div class="navbar__basket__list__item__content">
+                                        <div class="navbar__basket__list__item__content__pic">
+                                            <a href="#">
+                                                <img src="images/tmp/basket_1.jpg" alt="Shopping item" />
+                                            </a>
+                                        </div>
+                                        <div class="navbar__basket__list__item__content__detail">
+                                            <a href="#"> لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ </a>
+                                        </div>
+                                        <div class="navbar__basket__list__item__content__action">
+                                            <a href="#">
+                                                <i class="fa-solid fa-trash-can"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="navbar__basket__list__item__footer">
+                                        <div class="navbar__basket__list__item__footer__price">2,500,000 تومان</div>
+                                        <div class="navbar__basket__list__item__footer__quantity">
+                                            <a href="#" class="navbar__basket__list__item__footer__quantity__plus">+</a>
+                                            <span> 3</span>
+                                            <a href="#" class="navbar__basket__list__item__footer__quantity__minus">-</a>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="navbar__basket__list__item">
-                                <div class="navbar__basket__list__item__content">
-                                    <div class="navbar__basket__list__item__content__pic">
-                                        <a href="#">
-                                            <img src="images/tmp/basket_1.jpg" alt="Shopping item" />
-                                        </a>
+                                <div class="navbar__basket__list__item">
+                                    <div class="navbar__basket__list__item__content">
+                                        <div class="navbar__basket__list__item__content__pic">
+                                            <a href="#">
+                                                <img src="images/tmp/basket_1.jpg" alt="Shopping item" />
+                                            </a>
+                                        </div>
+                                        <div class="navbar__basket__list__item__content__detail">
+                                            <a href="#"> لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ </a>
+                                        </div>
+                                        <div class="navbar__basket__list__item__content__action">
+                                            <a href="#">
+                                                <i class="fa-solid fa-trash-can"></i>
+                                            </a>
+                                        </div>
                                     </div>
-                                    <div class="navbar__basket__list__item__content__detail">
-                                        <a href="#"> لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ </a>
-                                    </div>
-                                    <div class="navbar__basket__list__item__content__action">
-                                        <a href="#">
-                                            <i class="fa-solid fa-trash-can"></i>
-                                        </a>
+                                    <div class="navbar__basket__list__item__footer">
+                                        <div class="navbar__basket__list__item__footer__price">2,500,000 تومان</div>
+                                        <div class="navbar__basket__list__item__footer__quantity">
+                                            <a href="#" class="navbar__basket__list__item__footer__quantity__plus">+</a>
+                                            <span> 3</span>
+                                            <a href="#" class="navbar__basket__list__item__footer__quantity__minus">-</a>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="navbar__basket__list__item__footer">
-                                    <div class="navbar__basket__list__item__footer__price">2,500,000 تومان</div>
-                                    <div class="navbar__basket__list__item__footer__quantity">
-                                        <a href="#" class="navbar__basket__list__item__footer__quantity__plus">+</a>
-                                        <span> 3</span>
-                                        <a href="#" class="navbar__basket__list__item__footer__quantity__minus">-</a>
-                                    </div>
+                                <div class="navbar__basket__list__total">
+                                    مجموع سبد:
+                                    <span>451,000 تومان</span>
                                 </div>
-                            </div>
-                            <div class="navbar__basket__list__total">
-                                مجموع سبد:
-                                <span>451,000 تومان</span>
-                            </div>
-                            <div class="navbar__basket__list__submit">
-                                <a href="#"> ادامه فرآیند خرید </a>
+                                <div class="navbar__basket__list__submit">
+                                    <a href="#"> ادامه فرآیند خرید </a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -458,7 +495,7 @@
 
         <!-- Header -->
         <header>
-            <div class="container mt-20">
+            <div class="container mt-10">
                 <div class="header">
                     <img src="images/header_elements/header_1.jpg" class="responsive" alt="" />
                 </div>

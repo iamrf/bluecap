@@ -7,6 +7,9 @@ header {
 
 .header{
     width: 100%;
+    @media only screen and (max-width: 768px){
+        margin: 8rem 0 0 0;
+    }
     & img{
         width: 100%;
         border-bottom-left-radius: 2rem;
