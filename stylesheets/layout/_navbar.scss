@@ -381,7 +381,7 @@
             & > form > input[type="text"] {
                 position: relative;
                 width: 100%;
-                padding: .5rem;
+                padding: 1rem 1rem 1rem 3rem;
                 color: $gray-5;
                 border-radius: .5rem;
                 border: 0.2rem solid $gray-e;
@@ -390,8 +390,9 @@
                 font-family: "FontAwesome";
                 content: "\f002";
                 position: absolute;
-                top: .3rem;
+                top: .5rem;
                 left: .5rem;
+                bottom: .5rem;
                 cursor: pointer;
                 color: $gray-c;
                 background-color: transparent;

@@ -1718,7 +1718,7 @@ header {
   .navbar__search > form > input[type="text"] {
     position: relative;
     width: 100%;
-    padding: .5rem;
+    padding: 1rem 1rem 1rem 3rem;
     color: #555555;
     border-radius: .5rem;
     border: 0.2rem solid #eeeeee;
@@ -1727,8 +1727,9 @@ header {
     font-family: "FontAwesome";
     content: "\f002";
     position: absolute;
-    top: .3rem;
+    top: .5rem;
     left: .5rem;
+    bottom: .5rem;
     cursor: pointer;
     color: #cccccc;
     background-color: transparent;
@@ -2401,16 +2402,17 @@ header {
   position: absolute;
   bottom: 1rem;
   right: 3rem;
-  background-color: #30638E;
-  color: #ffffff;
+  background-color: transparent;
+  color: #00798C;
   padding: 0.5rem 1rem;
   font-weight: bold;
   border-radius: 0.5rem;
+  border: 0.1rem solid #00798C;
 }
 
 .slider__product__detail:hover {
-  background-color: #EDAE49;
-  color: #30638E;
+  background-color: #00798C;
+  color: #ffffff;
 }
 
 .slider__product__add-to-cart {
@@ -2425,8 +2427,8 @@ header {
 }
 
 .slider__product__add-to-cart:hover {
-  background-color: #EDAE49;
-  color: #30638E;
+  background-color: #D1495B;
+  color: #ffffff;
 }
 
 .blog-carousel {

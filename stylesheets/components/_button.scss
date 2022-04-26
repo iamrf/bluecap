@@ -9,14 +9,15 @@
             position: absolute;
             bottom: 1rem;
             right: 3rem;
-            background-color: $space-cadet;
-            color: $white;
+            background-color: transparent;
+            color: $manatee;
             padding: 0.5rem 1rem;
             font-weight: bold;
             border-radius: 0.5rem;
+            border: .1rem solid $manatee;
             &:hover {
-                background-color: $yellow-sun;
-                color: $space-cadet;
+                background-color: $manatee;
+                color: $white;
             }
         }
         &__add-to-cart {
@@ -29,8 +30,8 @@
             font-weight: bold;
             border-radius: 0.5rem;
             &:hover {
-                background-color: $yellow-sun;
-                color: $space-cadet;
+                background-color: $red-sun;
+                color: $white;
             }
         }
     }
