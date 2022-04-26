@@ -590,7 +590,8 @@
             align-items: center;
             width: 33rem;
             max-width: 85vw;
-            height: auto;
+            max-height: 60vh;
+            overflow-y: scroll;
             background-color: white;
             transform-origin: top;
             border-top-right-radius: 2rem;

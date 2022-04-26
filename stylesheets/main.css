@@ -2049,7 +2049,8 @@ header {
           align-items: center;
   width: 33rem;
   max-width: 85vw;
-  height: auto;
+  max-height: 60vh;
+  overflow-y: scroll;
   background-color: white;
   -webkit-transform-origin: top;
           transform-origin: top;
