@@ -1,0 +1,209 @@
+// ***  Mega Menu    ***
+.megamenu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    height: auto;
+    background-color: $gray-e;
+    box-shadow: -0.2rem 0.5rem 1rem $gray-7;
+    border-bottom-right-radius: 2rem;
+    padding: 1rem 0;
+    z-index: 3;
+    transform: scale(1, 0);
+    transform-origin: top;
+    transition: all 0.3s ease;
+    @media only screen and (max-width: 768px) {
+        background-color: $white;
+        box-shadow: none;
+        transition: none;
+        border-radius: 0;
+    }
+    &__item {
+        display: block;
+        width: 100%;
+        & li {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            padding: 0 1rem;
+            cursor: pointer;
+            @media only screen and (max-width: 1200px) {
+                font-size: 1.3rem;
+            }
+            @media only screen and (max-width: 768px){
+                position: relative;
+                flex-direction: column;
+                transform: scale(1, 1);
+                height: auto;
+            }
+            & > label > i {
+                color: $gray-7;
+                transition: all 0.2s ease;
+            }
+            &:hover {
+                & label > span {
+                    color: $manatee;
+                }
+                & > label > i {
+                    color: $manatee;
+                    transform: rotate(90deg);
+                    @media only screen and (max-width: 768px) {
+                        transform: rotate(0deg);
+                    }
+                }
+            }
+
+            & > input {
+                display: none;
+                &:checked ~ label > i {
+                    @media only screen and (max-width: 768px) {
+                        color: $manatee;
+                        transform: rotate(180deg);
+                    }
+                }
+            }
+            & > input:checked ~ label {
+                @media only screen and (max-width: 768px) {
+                    color: $manatee;
+                }
+            }
+            & > label {
+                cursor: pointer;
+            }
+            & > input:checked ~ div:nth-of-type(1){
+                @media only screen and (max-width: 768px){
+                    display: block;
+                }
+            }
+        }
+        & li:nth-of-type(1):hover > div:nth-of-type(1),
+        & li:nth-of-type(2):hover > div:nth-of-type(1),
+        & li:nth-of-type(3):hover > div:nth-of-type(1),
+        & li:nth-of-type(4):hover > div:nth-of-type(1),
+        & li:nth-of-type(5):hover > div:nth-of-type(1),
+        & li:nth-of-type(6):hover > div:nth-of-type(1) {
+            transform: scale(1, 1);
+            @media only screen and (max-width: 768px) {
+                transform: scale(1, 1);
+            }
+        }
+    }
+    &__cat {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 1.5rem 0;
+        color: $gray-7;
+        @media only screen and (max-width: 768px) {
+            font-size: 1.5rem;
+        }
+    }
+    &__sub {
+        position: absolute;
+        width: 50rem;
+        min-height: 100%;
+        top: 0;
+        right: 100%;
+        background-color: $white;
+        border-bottom-left-radius: 2rem;
+        color: $gray-7;
+        transform: scale(0, 1);
+        transform-origin: right;
+        z-index: 2;
+        transition: all 0.2s ease;
+        cursor: default;
+        box-shadow: -0.2rem 0.5rem 1rem $gray-7;
+        @media only screen and (max-width: 768px){
+            position: relative;
+            display: none;
+            top: 0;
+            right: 0;
+            width: 100%;
+            height: auto;
+            border-radius: 0;
+            transition: none;
+            transform: scale(1, 1);
+            box-shadow: none;
+        }
+        &__container {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            width: 100%;
+            &__header {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+                padding: 2.5rem 2rem;
+                border-bottom: 0.1rem solid $gray-c;
+                & > h4 {
+                    font-size: 1.8rem;
+                    @media only screen and (max-width: 1200px) {
+                        font-size: 1.4rem;
+                    }
+                    @media only screen and (max-width: 768px){
+                        display: none;
+                    }
+                }
+                & > a {
+                    font-family: $font-stack-light;
+                    font-weight: bold;
+                    color: $gray-9;
+                    @media only screen and (max-width: 1200px) {
+                        font-size: 1.4rem;
+                    }
+                    &:hover {
+                        color: $manatee;
+                    }
+                }
+            }
+            &__body {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+                width: 100%;
+                @media only screen and (max-width: 768px){
+                    flex-direction: column;
+                }
+                &__content {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+                    padding: 1rem 2rem;
+                    & > h5 {
+                        width: 100%;
+                        font-size: 1.4rem;
+                        text-align: center;
+                        padding: 1rem 0;
+                        @media only screen and (max-width: 1200px) {
+                            font-size: 1.3rem;
+                        }
+                    }
+                    & > a {
+                        font-family: $font-stack-light;
+                        padding: 0.5rem 0;
+                        color: $gray-7;
+                        @media only screen and (max-width: 768px){
+                            font-size: 1.5rem;
+                            padding: 1rem 0;
+                        }
+                        &:hover {
+                            color: $manatee;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

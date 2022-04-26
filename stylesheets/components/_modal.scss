@@ -1,0 +1,151 @@
+.signin-modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 5; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.6); /* Black w/ opacity */
+    &__content {
+        position: relative;
+        background-color: #fefefe;
+        margin: 5% auto; /* 15% from the top and centered */
+        padding: 0;
+        border: 0.1rem solid #888;
+        width: 30rem;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 0.6rem 2rem 0 rgba(0, 0, 0, 0.19);
+        animation-name: animatetop;
+        animation-duration: 0.4s;
+    }
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        padding: 1rem;
+    }
+    &__modal-page {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        & h2 {
+            color: $gray-4;
+        }
+        & p {
+            font-family: $font-stack-light;
+            margin: 2rem 0 0.5rem;
+        }
+        &__primary-btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: $primary;
+            color: $white;
+            font-size: 1.7rem;
+            padding: 1rem 1.5rem;
+            outline: none;
+            border: 0;
+            border-radius: 0.7rem;
+            transition: all .2s ease;
+            cursor: pointer;
+            &:hover{
+                background-color: $manatee;
+            }
+        }
+        &__secondary-btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: transparent;
+            color: $gray-7;
+            font-size: 1.7rem;
+            padding: 1rem 1.5rem;
+            outline: none;
+            border: 0;
+            border-radius: 0.7rem;
+            transition: all .2s ease;
+            cursor: pointer;
+            &:hover{
+                color: $manatee;
+            }
+        }
+        &__form {
+            & input {
+                outline: none;
+                width: 100%;
+                height: 4rem;
+                border: 0.1rem solid $gray-7;
+                border-radius: 0.7rem;
+                margin: 0.5rem 0;
+                padding: 0.5rem;
+            }
+            & input[type="checkbox"] {
+                width: 1.5rem !important;
+                height: 1.5rem !important;
+                color: $gray-7;
+                cursor: pointer;
+            }
+            & label {
+                color: $gray-7;
+                font-family: $font-stack-light;
+                font-size: 1.2rem;
+                margin-right: .5rem;
+                cursor: pointer;
+            }
+            &__container{
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                width: 100%;
+                & > a{
+                    font-size: 1.2rem;
+                    color: $primary;
+                    margin-right: auto;
+                    &:hover{
+                        color: $manatee;
+                    }
+                }
+            }
+            &__footer{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+            }
+        }
+    }
+    &__close-btn {
+        position: absolute;
+        top: 0.5rem;
+        left: 0.5rem;
+        color: $gray-6;
+        padding: 1rem;
+        border-radius: 1rem;
+        font-size: 2rem;
+        cursor: pointer;
+        &:hover {
+            color: $primary;
+        }
+    }
+}
+
+/* Add Animation */
+@keyframes animatetop {
+    from {
+        top: -30rem;
+        opacity: 0;
+    }
+    to {
+        top: 0;
+        opacity: 1;
+    }
+}

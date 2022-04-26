@@ -1,0 +1,38 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+/* Cascade */
+/* Inheritance */
+
+$base-path: '../';
+
+$font-stack: "dana-medium", "dana-light",Verdana, Geneva, Tahoma, sans-serif;
+$font-stack-light: "dana-light", "dana-medium", Verdana, Geneva, Tahoma, sans-serif;
+$font-stack-medium: "dana-medium","dana-light", Verdana, Geneva, Tahoma, sans-serif;
+
+// Colors
+$black-coral: #003D5B;
+$space-cadet: #30638E;
+$manatee: #00798C;
+$red-sun: #D1495B;
+$yellow-sun: #EDAE49;
+$silver-sand: #edf2f4ff;
+$cultured: #edf2f4ff;
+
+$primary: #0189FE;
+
+$white: #ffffff;
+$gray-1: #111111;
+$gray-2: #222222;
+$gray-3: #333333;
+$gray-4: #444444;
+$gray-5: #555555;
+$gray-6: #666666;
+$gray-7: #777777;
+$gray-8: #888888;
+$gray-9: #999999;
+$gray-a: #aaaaaa;
+$gray-b: #bbbbbb;
+$gray-c: #cccccc;
+$gray-d: #dddddd;
+$gray-e: #eeeeee;

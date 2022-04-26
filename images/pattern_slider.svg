@@ -1,0 +1,10 @@
+<svg id="Layer_1" data-name="Layer 1" 
+xmlns="http://www.w3.org/2000/svg" 
+xmlns:xlink="http://www.w3.org/1999/xlink" 
+viewBox="0 0 1920 1080">
+<defs><style>.cls-1{fill:none;}.cls-2{opacity:0.04;}.cls-3{fill:#aaa;}.cls-4{fill:url(#New_Pattern_Swatch_5);}</style>
+<pattern id="New_Pattern_Swatch_5" data-name="New Pattern Swatch 5" 
+width="50" height="50.038461538" 
+patternUnits="userSpaceOnUse" viewBox="0 0 13 13">
+<rect class="cls-1" width="13" height="13.01"/>
+<g class="cls-2"><path class="cls-3" d="M13,6.5,12.5,6h0L10.4,3.9a.4.4,0,0,0-.5,0,.4.4,0,0,0,0,.5l2.2,2.1h0L10,8.6c-.2.1-.2.3,0,.5h.5l2-2.1h0l.5-.5Z"/><path class="cls-3" d="M8.6,10,6.5,12.1,4.4,9.9H3.9a.4.4,0,0,0,0,.5L6.5,13h0l2.6-2.5a.4.4,0,0,0,0-.5C8.9,9.8,8.7,9.8,8.6,10Z"/><path class="cls-3" d="M6.5,0h0L3.9,2.6a.3.3,0,0,0,0,.4c.2.2.4.2.5,0L6.5,1,8.6,3.1h.5a.5.5,0,0,0,0-.5Z"/><path class="cls-3" d="M1,6.5H1L3,4.4c.2-.1.2-.3,0-.5a.3.3,0,0,0-.4,0L.5,6h0L0,6.5H0L.5,7h0L2.6,9.1h.5a.4.4,0,0,0,0-.5Z"/></g></pattern></defs><title>pat3</title><rect class="cls-4" width="1920" height="1080"/></svg>

@@ -1,0 +1,37 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the button component.
+// -----------------------------------------------------------------------------
+
+// Slider buttons
+.slider {
+    &__product {
+        &__detail {
+            position: absolute;
+            bottom: 1rem;
+            right: 3rem;
+            background-color: $space-cadet;
+            color: $white;
+            padding: 0.5rem 1rem;
+            font-weight: bold;
+            border-radius: 0.5rem;
+            &:hover {
+                background-color: $yellow-sun;
+                color: $space-cadet;
+            }
+        }
+        &__add-to-cart {
+            position: absolute;
+            bottom: 1rem;
+            left: 3rem;
+            background-color: $manatee;
+            color: $white;
+            padding: 0.5rem 1rem;
+            font-weight: bold;
+            border-radius: 0.5rem;
+            &:hover {
+                background-color: $yellow-sun;
+                color: $space-cadet;
+            }
+        }
+    }
+}

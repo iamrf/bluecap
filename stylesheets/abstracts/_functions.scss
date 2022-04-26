@@ -1,0 +1,10 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass functions.
+// -----------------------------------------------------------------------------
+@function image($file){
+  @return url($base-path + 'images/' + $file);
+}
+
+@function font($file) {
+  @return url($base-path + 'fonts/' + $file);
+}
