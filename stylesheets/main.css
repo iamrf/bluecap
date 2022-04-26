@@ -418,6 +418,7 @@ a:hover {
 }
 
 .container {
+  position: relative;
   width: 100%;
   margin-right: auto;
   margin-left: auto;
@@ -1163,28 +1164,48 @@ header {
             align-items: center;
     padding: 0 3rem;
   }
-  .mobile-wrap > .container > input[type="checkbox"] {
+  .mobile-wrap > .container > input[type="checkbox"]:nth-of-type(1) {
     display: none;
   }
-  .mobile-wrap > .container > label {
-    display: block;
-    color: #777777;
-    cursor: pointer;
-  }
-  .mobile-wrap > .container > input[type="checkbox"]:checked ~ .navbar {
+  .mobile-wrap > .container > input[type="checkbox"]:nth-of-type(1):checked ~ .navbar {
     -webkit-transform: scale(1, 1);
             transform: scale(1, 1);
   }
-  .mobile-wrap > .container > label::before {
+  .mobile-wrap > .container > input[type="checkbox"]:nth-of-type(1):checked ~ label:nth-of-type(1)::before {
+    font-family: "FontAwesome";
+    content: "\f00d";
+  }
+  .mobile-wrap > .container > label:nth-of-type(1) {
+    display: block;
+    width: 3rem;
+    color: #777777;
+    cursor: pointer;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+  }
+  .mobile-wrap > .container > label:nth-of-type(1)::before {
     font-family: "FontAwesome";
     font-size: 3.5rem;
     content: "\f0c9";
     -webkit-transition: all 0.2s ease;
     transition: all 0.2s ease;
   }
-  .mobile-wrap > .container > input[type="checkbox"]:checked ~ label::before {
+  .mobile-wrap > .container > input[type="checkbox"]:nth-of-type(2) {
+    display: none;
+  }
+  .mobile-wrap > .container > label:nth-of-type(2) {
+    display: block;
+    color: #777777;
+    cursor: pointer;
+  }
+  .mobile-wrap > .container > label:nth-of-type(2)::before {
     font-family: "FontAwesome";
-    content: "\f00d";
+    font-size: 3.5rem;
+    content: "\f291";
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
   }
 }
 
@@ -1202,6 +1223,12 @@ header {
   }
 }
 
+.mobile-wrap__basket-holder {
+  position: relative;
+  display: block;
+  width: 2.5rem;
+}
+
 .mobile-wrap__basket {
   display: none;
 }
@@ -1209,10 +1236,10 @@ header {
 @media only screen and (max-width: 768px) {
   .mobile-wrap__basket {
     display: block;
-    cursor: pointer;
   }
-  .mobile-wrap__basket > i {
+  .mobile-wrap__basket > label > i {
     font-size: 2.5rem;
+    cursor: pointer;
     color: #777777;
   }
 }
@@ -1420,7 +1447,7 @@ header {
   height: 12rem;
 }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 991px) {
   .navbar__list {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
@@ -1455,7 +1482,7 @@ header {
   width: 100%;
 }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 991px) {
   .navbar__list__search {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
@@ -1635,13 +1662,15 @@ header {
   color: #edf2f4ff;
   border-top-left-radius: 0.7rem;
   border-top-right-radius: 0.7rem;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 
 @media only screen and (max-width: 768px) {
   .navbar__list__menu__link__categories > label > span {
-    background-color: transparent;
-    color: #777777;
+    color: #ffffff;
     font-size: 1.5rem;
+    border-radius: 0;
   }
 }
 
@@ -1651,7 +1680,7 @@ header {
 
 @media only screen and (max-width: 768px) {
   .navbar__list__menu__link__categories > label > span:hover {
-    color: #00798C;
+    color: #eeeeee;
   }
 }
 
@@ -1664,6 +1693,52 @@ header {
   .navbar__list__menu__link__categories:hover > .megamenu {
     -webkit-transform: scale(0, 0);
             transform: scale(0, 0);
+  }
+}
+
+.navbar__search {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar__search {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 1rem 1rem;
+    border-bottom: 0.2rem solid #eeeeee;
+  }
+  .navbar__search > form {
+    position: relative;
+    width: 100%;
+  }
+  .navbar__search > form > * {
+    outline: none;
+  }
+  .navbar__search > form > input[type="text"] {
+    position: relative;
+    width: 100%;
+    padding: .5rem;
+    color: #555555;
+    border-radius: .5rem;
+    border: 0.2rem solid #eeeeee;
+  }
+  .navbar__search > form > button {
+    font-family: "FontAwesome";
+    content: "\f002";
+    position: absolute;
+    top: .3rem;
+    left: .5rem;
+    cursor: pointer;
+    color: #cccccc;
+    background-color: transparent;
+    border: 0;
+    font-size: 2.5rem;
+    -webkit-transition: all .2s ease;
+    transition: all .2s ease;
+  }
+  .navbar__search > form > button:hover {
+    color: #00798C;
   }
 }
 
@@ -1682,7 +1757,7 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 1rem 0;
+  margin: 1rem 0 0 5rem;
   margin-right: auto;
 }
 
@@ -1904,23 +1979,48 @@ header {
 }
 
 .navbar__basket {
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
   padding-right: 2rem;
   border-right: 0.3rem solid #cccccc;
   margin: 1rem 0;
-  cursor: pointer;
+}
+
+@media only screen and (max-width: 992px) {
+  .navbar__basket {
+    margin: 3rem 0;
+  }
 }
 
 @media only screen and (max-width: 768px) {
   .navbar__basket {
-    display: none;
+    margin: 0;
+    padding: 0;
+    left: 2.5rem;
+    top: 1rem;
+    border: 0;
   }
+}
+
+.navbar__basket > input[type="checkbox"] {
+  display: none;
+}
+
+.navbar__basket > input[type="checkbox"]:checked ~ div.navbar__basket__list {
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+}
+
+.navbar__basket > label {
+  position: relative;
+  cursor: pointer;
 }
 
 .navbar__basket__num {
   position: absolute;
-  top: -0.3rem;
-  left: -0.6rem;
+  top: -2.5rem;
+  left: -0.4rem;
   background-color: #D1495B;
   color: #edf2f4ff;
   padding: 0.3rem 0.5rem 0;
@@ -1931,9 +2031,11 @@ header {
 
 .navbar__basket__list {
   position: absolute;
-  top: 100%;
+  top: 110%;
   left: 0;
-  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -1945,17 +2047,23 @@ header {
       -ms-flex-align: center;
           align-items: center;
   width: 33rem;
+  max-width: 85vw;
   height: auto;
   background-color: white;
   -webkit-transform-origin: top;
           transform-origin: top;
+  border-top-right-radius: 2rem;
   border-bottom-left-radius: 2rem;
   border-bottom-right-radius: 2rem;
   -webkit-box-shadow: 0.2rem 0.5rem 1rem #777777;
           box-shadow: 0.2rem 0.5rem 1rem #777777;
   padding: 2rem 1rem;
   z-index: 3;
-  cursor: default;
+  -webkit-transform: scale(1, 0);
+          transform: scale(1, 0);
+  transform-origin: top;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 
 .navbar__basket__list__item {

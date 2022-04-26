@@ -27,26 +27,44 @@
             justify-content: space-between;
             align-items: center;
             padding: 0 3rem;
-            & > input[type="checkbox"] {
+            // Burger Menu
+            & > input[type="checkbox"]:nth-of-type(1) {
+                display: none;
+                &:checked ~ .navbar {
+                    transform: scale(1, 1);
+                }
+                &:checked ~ label:nth-of-type(1)::before {
+                    font-family: "FontAwesome";
+                    content: "\f00d";
+                }
+            }
+            & > label:nth-of-type(1) {
+                display: block;
+                width: 3rem;
+                color: $gray-7;
+                cursor: pointer;
+                user-select: none;
+                &::before {
+                    font-family: "FontAwesome";
+                    font-size: 3.5rem;
+                    content: "\f0c9";
+                    transition: all 0.2s ease;
+                }
+            }
+            // Basket DropDown
+            & > input[type="checkbox"]:nth-of-type(2) {
                 display: none;
             }
-            & > label {
+            & > label:nth-of-type(2) {
                 display: block;
                 color: $gray-7;
                 cursor: pointer;
-            }
-            & > input[type="checkbox"]:checked ~ .navbar {
-                transform: scale(1, 1);
-            }
-            & > label::before {
-                font-family: "FontAwesome";
-                font-size: 3.5rem;
-                content: "\f0c9";
-                transition: all 0.2s ease;
-            }
-            & > input[type="checkbox"]:checked ~ label::before {
-                font-family: "FontAwesome";
-                content: "\f00d";
+                &::before {
+                    font-family: "FontAwesome";
+                    font-size: 3.5rem;
+                    content: "\f291";
+                    transition: all 0.2s ease;
+                }
             }
         }
     }
@@ -60,13 +78,23 @@
             }
         }
     }
+
+    &__basket-holder {
+        position: relative;
+        display: block;
+        width: 2.5rem;
+    }
+
     &__basket {
         display: none;
         @media only screen and (max-width: 768px) {
             display: block;
-            cursor: pointer;
-            & > i {
+            & > input[type="checkbox"] {
+                // display: none;
+            }
+            & > label > i {
                 font-size: 2.5rem;
+                cursor: pointer;
                 color: $gray-7;
             }
         }
@@ -102,6 +130,7 @@
         overflow-x: hidden;
         overflow-y: scroll;
     }
+
     &__logo {
         display: flex;
         flex-direction: column;
@@ -182,7 +211,7 @@
         margin: 0 3rem;
         max-width: 100%;
         height: 12rem;
-        @media only screen and (max-width: 992px) {
+        @media only screen and (max-width: 991px) {
             order: 1;
             margin: 1rem 0;
             height: auto;
@@ -201,7 +230,7 @@
         &__search {
             position: relative;
             width: 100%;
-            @media only screen and (max-width: 992px) {
+            @media only screen and (max-width: 991px) {
                 order: 1;
                 margin: 1rem 0 0;
             }
@@ -291,7 +320,7 @@
                 }
                 &__categories {
                     position: relative;
-                    @media only screen and (max-width: 768px){
+                    @media only screen and (max-width: 768px) {
                         width: 100%;
                     }
                     & > input[type="checkbox"] {
@@ -304,32 +333,73 @@
                     }
                     & > label {
                         cursor: pointer;
-                    }
-                    & > label > span {
-                        background-color: $manatee;
-                        color: $cultured;
-                        border-top-left-radius: 0.7rem;
-                        border-top-right-radius: 0.7rem;
-                        @media only screen and (max-width: 768px){
-                            background-color: transparent;
-                            color: $gray-7;
-                            font-size: 1.5rem;
-                        }
-                    }
-                    & > label > span:hover {
-                        color: $white;
-                        @media only screen and (max-width: 768px){
-                            color: $manatee;
+                        & > span {
+                            background-color: $manatee;
+                            color: $cultured;
+                            border-top-left-radius: 0.7rem;
+                            border-top-right-radius: 0.7rem;
+                            transition: all 0.2s ease;
+                            @media only screen and (max-width: 768px) {
+                                color: $white;
+                                font-size: 1.5rem;
+                                border-radius: 0;
+                            }
+                            &:hover {
+                                color: $white;
+                                @media only screen and (max-width: 768px) {
+                                    color: $gray-e;
+                                }
+                            }
                         }
                     }
                     &:hover > .megamenu {
                         transform: scale(1, 1);
-                    }
-                    @media only screen and (max-width: 768px) {
-                        &:hover > .megamenu {
+                        @media only screen and (max-width: 768px) {
                             transform: scale(0, 0);
                         }
                     }
+                }
+            }
+        }
+    }
+
+    &__search {
+        display: none;
+        @media only screen and (max-width: 768px) {
+            position: relative;
+            display: block;
+            width: 100%;
+            padding: 1rem 1rem;
+            border-bottom: 0.2rem solid $gray-e;
+            & > form {
+                position: relative;
+                width: 100%;
+                & > * {
+                    outline: none;
+                }
+            }
+            & > form > input[type="text"] {
+                position: relative;
+                width: 100%;
+                padding: .5rem;
+                color: $gray-5;
+                border-radius: .5rem;
+                border: 0.2rem solid $gray-e;
+            }
+            & > form > button {
+                font-family: "FontAwesome";
+                content: "\f002";
+                position: absolute;
+                top: .3rem;
+                left: .5rem;
+                cursor: pointer;
+                color: $gray-c;
+                background-color: transparent;
+                border: 0;
+                font-size: 2.5rem;
+                transition: all .2s ease;
+                &:hover{
+                    color: $manatee;
                 }
             }
         }
@@ -341,7 +411,7 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        margin: 1rem 0;
+        margin: 1rem 0 0 5rem;
         margin-right: auto;
         @media only screen and (max-width: 768px) {
             width: 100%;
@@ -470,19 +540,38 @@
             }
         }
     }
+
     &__basket {
-        position: relative;
+        position: absolute;
+        top: 0;
+        left: 0;
         padding-right: 2rem;
         border-right: 0.3rem solid $gray-c;
         margin: 1rem 0;
-        cursor: pointer;
+        @media only screen and (max-width: 992px) {
+            margin: 3rem 0;
+        }
         @media only screen and (max-width: 768px) {
+            margin: 0;
+            padding: 0;
+            left: 2.5rem;
+            top: 1rem;
+            border: 0;
+        }
+        & > input[type="checkbox"] {
             display: none;
+            &:checked ~ div.navbar__basket__list {
+                transform: scale(1, 1);
+            }
+        }
+        & > label {
+            position: relative;
+            cursor: pointer;
         }
         &__num {
             position: absolute;
-            top: -0.3rem;
-            left: -0.6rem;
+            top: -2.5rem;
+            left: -0.4rem;
             background-color: $red-sun;
             color: $cultured;
             padding: 0.3rem 0.5rem 0;
@@ -492,22 +581,26 @@
         }
         &__list {
             position: absolute;
-            top: 100%;
+            top: 110%;
             left: 0;
-            display: none;
+            display: flex;
             flex-direction: column;
             justify-content: flex-start;
             align-items: center;
             width: 33rem;
+            max-width: 85vw;
             height: auto;
             background-color: white;
             transform-origin: top;
+            border-top-right-radius: 2rem;
             border-bottom-left-radius: 2rem;
             border-bottom-right-radius: 2rem;
             box-shadow: 0.2rem 0.5rem 1rem $gray-7;
             padding: 2rem 1rem;
             z-index: 3;
-            cursor: default;
+            transform: scale(1, 0);
+            transform-origin: top;
+            transition: all 0.2s ease;
             &__item {
                 display: flex;
                 flex-direction: column;
