@@ -40,6 +40,7 @@
                 box-shadow: -0.4rem 0.4rem 0.5rem $gray-c;
             }
             &__header {
+                width: 100%;
                 padding: 0;
                 object-fit: cover;
                 & img {
